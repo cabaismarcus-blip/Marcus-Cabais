@@ -1,0 +1,1615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcus Cabais | Singer, Actor, Host, Songwriter, Composer, Model</title>
+<meta name="description" content="Marcus Cabais: singer, actor, host, songwriter, composer and model. Young Simba in Disney's The Lion King (2018 to 2020), formerly of HORI7ON, co-writer of Mama, Cold, Fly With It, Sulong and Sumayaw Sumunod.">
+<meta property="og:title" content="Marcus Cabais">
+<meta property="og:description" content="Singer, actor, host, songwriter, composer, model. Young Simba in The Lion King, 2018 to 2020.">
+<meta name="theme-color" content="#17181D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<!--
+  HOW TO UPDATE THIS SITE (no coding needed)
+  1. Open this file on GitHub, click the pencil icon.
+  2. Find the section you want (Highlights, Songwriting, Press, Awards, Timeline, Contact).
+  3. Copy one <li> or one card, paste it right under itself, change the words.
+  4. Click "Commit changes". Cloudflare republishes in about a minute.
+
+  PHOTOS AND COVERS: upload images to the "images" folder in your GitHub repo.
+    images/hero.jpg             -> your face photo on the first page
+    images/marcus.jpg            -> your main photo (About section)
+    images/lion-king.jpg         -> your Lion King photo (Highlights slide 1)
+    images/highlights/hori7on.jpg, bench.jpg, vivo.jpg, awards.jpg -> the other Highlights slide photos
+    images/covers/mama.jpg       -> song covers (see the Songwriting section for each file name)
+    images/press/parcinq.jpg     -> your Parcinq magazine photo
+    images/press/nylon.jpg       -> your Nylon magazine photo
+    images/brands/jbl.jpg        -> JBL campaign photo (big main card)
+    images/brands/sm-supermalls.png, bench.png, samsung.png, vivo.png, straightforward.png
+                                 -> brand logos for the Brand partnerships section
+  Until an image is uploaded, a placeholder shows instead.
+  Photos show in black and white. Song covers and magazine photos turn to color on hover.
+
+  VIDEO + MUSIC: paste links between the quotes. Philippine Arena video: data-youtube="..." (a YouTube link).
+                 Each song: data-spotify="..." (a Spotify "Copy link to song" link). Players appear on their own.
+
+  LOOK: colors are in the :root block just below. Grain strength is "--grain".
+-->
+
+<style>
+:root{
+  --bg:#17181D;
+  --panel:#1F2127;
+  --line:#363842;
+  --ghost:#474A57;
+  --text:#F1F1F4;
+  --muted:#A7AAB5;
+  --accent:#F2F2F2;   /* white. Everything is monochrome. */
+  --sec:#E6D3A3;     /* default section accent; each section sets its own */
+  --grain:.10;
+  --accent:#F6C453;        /* film grain strength: 0 = off, .2 = heavy */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:'Space Grotesk',system-ui,sans-serif;
+  line-height:1.55;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:inherit}
+::selection{background:var(--text);color:var(--bg)}
+.wrap{position:relative;z-index:1;width:100%;max-width:1160px;margin:0 auto;padding:0 24px}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.muted{color:var(--muted)}
+:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+
+/* FILM GRAIN + VIGNETTE (cover the whole page) */
+body::after{
+  content:"";position:fixed;inset:0;z-index:100;pointer-events:none;opacity:var(--grain);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  background-size:240px 240px;mix-blend-mode:overlay;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:99;pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.32) 100%);
+}
+
+/* NAV */
+header{position:sticky;top:0;z-index:10;background:rgba(23,24,29,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px}
+.logo{font-weight:700;letter-spacing:-.02em;text-decoration:none;font-size:18px}
+.logo span{color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:6px 26px}
+.links a{text-decoration:none;color:var(--muted);transition:color .2s}
+.links a:hover{color:var(--text)}
+
+/* HERO */
+.hero{--sec:#EDEDED;position:relative;padding:120px 0 112px;border-bottom:1px solid var(--line);overflow:hidden}
+.hero::before{ /* hairline grid that fades out */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(#4A4D59 1px,transparent 1px),linear-gradient(90deg,#4A4D59 1px,transparent 1px);
+  background-size:72px 72px;opacity:.7;
+  -webkit-mask-image:radial-gradient(ellipse 85% 100% at 72% 15%,#000 0%,transparent 78%);
+  mask-image:radial-gradient(ellipse 85% 100% at 72% 15%,#000 0%,transparent 78%);
+}
+.hero .mono.top{margin:0 0 44px;color:var(--muted)}
+.hero .mono.top b{font-weight:400;color:var(--text)}
+h1{
+  margin:0;font-weight:700;text-transform:uppercase;
+  font-size:clamp(44px,10.5vw,140px);line-height:.92;letter-spacing:-.045em;
+}
+h1 .outline{color:transparent;-webkit-text-stroke:2px var(--text)}
+.hero-row{display:flex;flex-wrap:wrap;gap:44px 56px;align-items:flex-end;justify-content:space-between;margin-top:96px}
+.hero-row p{margin:0;max-width:500px;font-size:17px;line-height:1.7;color:var(--text)}
+.hero-row p.roles{margin:0 0 26px;font-size:clamp(14px,1.5vw,17px);font-weight:700;letter-spacing:.01em}
+.hero-row p em{font-style:normal;color:var(--muted)}
+.hero-row p strong{font-weight:700}
+.btns{display:flex;flex-wrap:wrap;gap:16px}
+.hero .btn{padding:12px 22px;font-size:14px}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+  padding:15px 26px;border:1.5px solid var(--text);transition:all .2s;
+}
+.btn:hover{background:var(--text);color:var(--bg)}
+.hero-socials{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:32px;width:100%}
+.hero-socials a{font-size:12px}
+.hero-socials a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:all .2s}
+.hero-socials a:hover{color:var(--text);border-color:var(--text)}
+.btn.solid{background:var(--sec);border-color:var(--sec);color:var(--bg)}
+.btn.solid:hover{background:transparent;color:var(--sec)}
+
+/* HERO PHOTO (your face) */
+.hero .mono.top,.hero h1,.hero-row{position:relative;z-index:1}
+.hero-photo{
+  position:absolute;right:0;top:-88px;bottom:-80px;width:min(50%,560px);z-index:0;margin:0;
+  pointer-events:none;display:flex;align-items:center;justify-content:center;
+  /* soft fade on the right and top edges so the photo melts into the page */
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,#000 50%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 16%);
+  -webkit-mask-composite:source-in;
+  mask-image:linear-gradient(90deg,#000 0%,#000 50%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 16%);
+  mask-composite:intersect;
+}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.12) brightness(.95)}
+.hero-photo::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,var(--bg) 0%,rgba(23,24,29,.55) 35%,transparent 70%),linear-gradient(0deg,var(--bg) 0%,transparent 38%);
+}
+.hero-photo .ph{position:relative;z-index:1;color:var(--muted);text-align:center;padding:14px 18px;border:1px dashed #4A4D59}
+
+/* TICKER BAND (soft, translucent, tilted) */
+.ticker-wrap{overflow:hidden;padding:34px 0;border-bottom:1px solid var(--line)}
+.ticker{transform:rotate(-1.6deg);width:108%;margin-left:-4%;background:rgba(237,237,237,.07);color:rgba(237,237,237,.5);overflow:hidden;border-top:1px solid rgba(237,237,237,.16);border-bottom:1px solid rgba(237,237,237,.16);backdrop-filter:blur(2px)}
+.ticker-track{display:flex;width:max-content;animation:slide 40s linear infinite}
+.ticker .half{display:flex;flex:none}
+.ticker span{
+  flex:none;padding:14px 20px;font-size:clamp(30px,4.6vw,60px);font-weight:700;line-height:1.1;
+  text-transform:uppercase;letter-spacing:-.02em;white-space:nowrap;
+}
+.ticker span.o{color:transparent;-webkit-text-stroke:1.5px rgba(237,237,237,.45)}
+.ticker i{flex:none;align-self:center;font-style:normal;font-size:clamp(26px,3.6vw,46px);color:rgba(237,237,237,.28)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{position:relative;padding:104px 0;border-bottom:1px solid var(--line);overflow:hidden}
+section::before{content:"+";position:absolute;left:10px;top:8px;color:var(--sec);font-family:'JetBrains Mono',monospace;font-size:16px}
+section::after{content:"+";position:absolute;right:10px;bottom:8px;color:var(--sec);font-family:'JetBrains Mono',monospace;font-size:16px}
+.ghost{
+  position:absolute;right:-6px;top:6px;z-index:0;pointer-events:none;user-select:none;
+  font-size:clamp(140px,26vw,360px);font-weight:700;line-height:.8;letter-spacing:-.06em;
+  color:transparent;-webkit-text-stroke:1.5px var(--ghost);
+  -webkit-text-stroke-color:color-mix(in srgb,var(--sec) 45%,var(--bg));
+}
+.sec-head{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;margin-bottom:48px}
+.sec-head .mono{color:var(--sec)}
+.sec-head::after{content:"";flex:1 1 80px;height:1px;background:var(--sec);opacity:.7;align-self:center;order:3}
+h2{margin:0;font-size:clamp(36px,6vw,68px);letter-spacing:-.04em;line-height:.95;text-transform:uppercase}
+
+/* LION KING FEATURE */
+.lk{--sec:#FFA62B;background:radial-gradient(ellipse 70% 60% at 85% 0%,rgba(255,166,43,.26),transparent 70%),radial-gradient(ellipse 50% 40% at 8% 100%,rgba(255,210,74,.12),transparent 70%),var(--bg)}
+.lk-grid{display:flex;flex-wrap:wrap;gap:56px;align-items:stretch}
+.lk-copy{flex:999 1 420px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:40px;container-type:inline-size}
+.lk-label{color:#FFC94D;margin:0 0 20px}
+.lk h2.big{font-size:clamp(44px,9vw,120px);font-size:min(19cqw,150px);line-height:.86;letter-spacing:-.05em;margin:0;white-space:nowrap}
+.lk h2 .outline{color:transparent;-webkit-text-stroke:2px #FFC94D}
+.lk-lead{margin:28px 0 0;font-size:clamp(20px,2.4vw,26px);max-width:560px;line-height:1.4}
+.lk-lead span{color:var(--muted)}
+.lk-photo{
+  position:relative;flex:1 1 480px;width:100%;max-width:680px;aspect-ratio:1/1;min-height:0;align-self:center;
+  background:var(--panel);border:1px solid #FFA62B;overflow:visible;
+  display:flex;align-items:center;justify-content:center;margin:0;
+  box-shadow:14px 14px 0 0 rgba(255,166,43,.30);
+}
+.lk-photo .ph{color:var(--muted);text-align:center;padding:0 20px}
+.lk-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.05)}
+.lk-photo::before,.lk-photo::after{
+  content:"";position:absolute;width:30px;height:30px;z-index:2;pointer-events:none;
+}
+.lk-photo::before{top:-10px;left:-10px;border-top:3px solid #FFD24A;border-left:3px solid #FFD24A}
+.lk-photo::after{bottom:-10px;right:-10px;border-bottom:3px solid #FFD24A;border-right:3px solid #FFD24A}
+.stats{display:flex;flex-wrap:wrap;border-top:1px solid var(--sec)}
+.stat{flex:1 1 180px;padding:22px 24px 6px 0}
+.stat .mono{color:var(--muted);margin:0 0 6px}
+.stat b{display:block;font-size:clamp(26px,3.4vw,40px);font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.stat b.big{color:transparent;-webkit-text-stroke:1.5px var(--sec)}
+.stat b.huge{font-size:clamp(56px,8vw,104px);letter-spacing:-.05em;line-height:.9;color:var(--sec)}
+.lk-stops{margin:28px 0 0;color:var(--muted);font-size:17px;max-width:640px}
+.lk-stops span{color:#FFC94D}
+
+/* Lion King stats: Role, Years, Countries, Cities all on ONE line */
+.lk .stats{flex-wrap:nowrap}
+.lk .stat{flex:0.75 1 0;min-width:0;padding:20px 14px 6px 0}
+.lk .stat:nth-child(-n+2){flex:1.5 1 0}
+.lk .stat b{font-size:clamp(15px,4.2cqw,32px);line-height:1.1;overflow-wrap:anywhere}
+.lk .stat .mono{font-size:clamp(9px,2.1cqw,12px);letter-spacing:.06em}
+@container (max-width:519px){
+  .lk .stats{flex-wrap:wrap}
+  .lk .stat,.lk .stat:nth-child(-n+2){flex:1 1 40%}
+  .lk .stat b{font-size:clamp(20px,6.4cqw,28px)}
+  .lk .stat .mono{font-size:12px}
+}
+.lk-cities{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.lk-cities li{border:1px solid #FFA62B;color:#FFC94D;padding:8px 16px;font-size:clamp(15px,1.6vw,18px);font-weight:500;transition:all .2s}
+.lk-cities li:hover{background:#FFA62B;color:var(--bg)}
+
+/* PARTNERSHIPS */
+.brands{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px;align-items:stretch}
+.brand{flex:1 1 240px;min-width:0;border:1px solid var(--line);background:var(--panel);padding:20px 20px 26px;display:flex;flex-direction:column;gap:16px;transition:border-color .25s,transform .25s,box-shadow .25s}
+.brand:hover{border-color:var(--sec);transform:translate(-4px,-4px);box-shadow:8px 8px 0 0 color-mix(in srgb,var(--sec) 28%,var(--bg))}
+.brand .mono{color:var(--sec);margin:0}
+.brand h3{margin:0;font-size:clamp(30px,3.6vw,46px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase;font-weight:700}
+.brand .tags{display:flex;flex-wrap:wrap;gap:8px}
+.brand .tags li{border:1px solid var(--line);padding:6px 12px;font-size:14px;color:var(--text)}
+.brand-logo{position:relative;margin:auto 0 0;aspect-ratio:16/7;background:#1A1C21;border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.brand-logo.sq{aspect-ratio:1/1}
+.brand-logo .ph{color:var(--muted);text-align:center;padding:0 10px;font-size:11px}
+.brand-logo img{position:absolute;inset:16px;width:calc(100% - 32px);height:calc(100% - 32px);object-fit:contain}
+.brand-photo{position:relative;margin:0;aspect-ratio:4/3;background:#1A1C21;border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.brand-photo .ph{color:var(--muted);text-align:center;padding:0 10px}
+.brand-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .35s}
+.brand:hover .brand-photo img{filter:none}
+.brand.wide{grid-column:span 2}
+.brand.wider{grid-column:span 3}
+.brand h3{overflow-wrap:normal}
+@media (max-width:1011px){.brand.wider{grid-column:span 2}}
+@media (max-width:515px){.brand.wide,.brand.wider{grid-column:1/-1}}
+.brand.main{grid-column:1/-1;flex:1 1 100%;flex-direction:row;flex-wrap:wrap;align-items:center;gap:32px 56px;padding:44px 36px;border-color:var(--sec);background:radial-gradient(ellipse 60% 120% at 100% 0%,color-mix(in srgb,var(--sec) 14%,transparent),transparent 70%),var(--panel)}
+.brand.main:hover{transform:none;box-shadow:none}
+.brand-copy{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:18px}
+.brand.main h3{font-size:clamp(88px,15vw,210px);line-height:.84;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px var(--sec)}
+.brand.main .what{margin:0;font-size:clamp(18px,2.2vw,24px)}
+.brand.main .brand-photo{flex:1 1 360px;max-width:560px}
+.brand.main .tags li{border-color:var(--sec);font-size:17px;padding:10px 18px}
+.brands-credit{margin:28px 0 0;color:var(--muted);font-size:11px;text-transform:none;letter-spacing:.03em}
+
+/* LISTS */
+ol,ul{list-style:none;margin:0;padding:0}
+.rows li{
+  display:flex;flex-wrap:wrap;gap:6px 24px;align-items:baseline;
+  padding:22px 0;border-top:1px solid var(--line);transition:padding .25s,background .25s;
+}
+.rows li:last-child{border-bottom:1px solid var(--line)}
+.rows li:hover{padding-left:14px;background:var(--panel);box-shadow:inset 3px 0 0 var(--sec)}
+.rows .num{flex:0 0 64px;color:var(--muted)}
+.rows .title{flex:1 1 280px;font-size:clamp(20px,2.6vw,30px);font-weight:500;letter-spacing:-.02em}
+.rows .title small{display:block;font-size:16px;font-weight:400;letter-spacing:0;color:var(--muted);margin-top:2px}
+.rows .meta{flex:0 1 auto;color:var(--muted)}
+.rows li:hover .num{color:var(--sec)}
+.rows li.star .title{font-weight:700;color:var(--sec)}
+.rows li.star .meta{color:var(--sec)}
+.rows.noms .title{font-size:clamp(18px,2.2vw,24px)}
+.sub{margin:64px 0 24px;font-size:clamp(22px,3vw,32px);letter-spacing:-.02em;text-transform:uppercase}
+
+/* STAGES */
+.venues{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.venue{flex:1 1 440px;min-width:0;padding:32px 28px 36px 0;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}
+.venue:hover{background:var(--panel);padding-left:20px;box-shadow:inset 3px 0 0 var(--sec)}
+.venue .mono{color:var(--sec);margin:0 0 14px}
+.venue h3{margin:0;font-size:clamp(36px,5.2vw,68px);line-height:.92;letter-spacing:-.045em;text-transform:uppercase;font-weight:700}
+.venue h3 .o{display:block;color:transparent;-webkit-text-stroke:1.5px var(--text)}
+.venue .what{margin:16px 0 0;color:var(--muted);font-size:17px}
+.venue .what + .what{margin-top:6px}
+.venue.main{flex-basis:100%;padding-top:44px;padding-bottom:48px;padding-left:24px;background:linear-gradient(90deg,rgba(235,164,135,.12),transparent 70%)}
+.venue.main:hover{padding-left:24px;box-shadow:inset 3px 0 0 var(--sec);background:linear-gradient(90deg,rgba(235,164,135,.18),transparent 70%)}
+.venue.main h3{font-size:clamp(48px,8.4vw,120px)}
+.venue.main h3 .o{-webkit-text-stroke-color:var(--sec)}
+.venue.main .tag{display:inline-block;margin:0 0 20px;padding:6px 12px;border:1px solid var(--sec);color:var(--sec)}
+.venue.main .what{font-size:19px;color:var(--text)}
+.venue.main .what.sub-note{color:var(--muted);font-size:17px}
+/* KOREAN MUSIC SHOWS (bright) */
+.shows{--c:#E4E4E4;margin-top:56px;padding:36px 32px 30px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05)}
+.shows .sub{color:var(--c)}
+.show-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-top:22px}
+.show{position:relative;display:flex;flex-direction:column;overflow:hidden;
+  border:1px solid var(--c);background:color-mix(in srgb,var(--c) 10%,var(--bg));
+  transition:transform .2s,box-shadow .2s,background .2s}
+.show::before{content:"";height:5px;background:var(--c)}
+.show .logo{position:relative;aspect-ratio:4/3;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.show .logo .ph{color:var(--c);opacity:.7;text-align:center;font-size:11px}
+.show .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.show .name{padding:12px 16px 14px;font-weight:700;font-size:clamp(16px,1.7vw,19px);letter-spacing:-.01em;color:var(--c);border-top:1px solid color-mix(in srgb,var(--c) 45%,transparent)}
+.show:hover{transform:translate(-4px,-4px);background:color-mix(in srgb,var(--c) 26%,var(--bg));box-shadow:7px 7px 0 0 color-mix(in srgb,var(--c) 55%,var(--bg))}
+.shows-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px}
+.shows .logo-credit{margin:0;text-align:right;white-space:nowrap;color:var(--muted);font-size:9px;line-height:1.5;letter-spacing:.03em;text-transform:none}
+@media (max-width:760px){.shows{padding-left:18px;padding-right:18px}.shows .logo-credit{text-align:left;font-size:min(9px,2.1vw);letter-spacing:0}}
+.shows .note{margin:22px 0 0;color:var(--text);font-size:16px}
+
+/* STAGE PHOTOS */
+.v-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:0;max-height:0;opacity:0;overflow:hidden;transition:max-height .45s ease,opacity .35s ease,margin-top .35s ease}
+.venue:hover .v-photos,.venue:focus-within .v-photos{max-height:700px;opacity:1;margin-top:24px}
+@media (hover:none){.v-photos{max-height:none;opacity:1;margin-top:24px}}
+.v-photo{position:relative;margin:0;aspect-ratio:4/3;background:var(--panel);border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center;transition:border-color .25s}
+.v-photo .ph{color:var(--muted);text-align:center;padding:0 10px}
+.v-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.venue:hover .v-photo{border-color:var(--sec)}
+.venue:hover .v-photo img{transform:scale(1.04)}
+.venue.main .v-photos{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.venue.main .v-photo{aspect-ratio:16/9}
+
+/* FIRST SONG: same card as the rest, white/grey border instead of the accent */
+.song.main .cover{border-color:#EDEDED;box-shadow:6px 6px 0 0 #4A4D59}
+.song.main .cover img{filter:none}
+.song.main:hover .cover{border-color:#EDEDED;box-shadow:9px 9px 0 0 #5a5a5a}
+
+/* VIDEO CLIPS */
+.rows li[data-video].has-clip{cursor:pointer}
+.clip-tag{flex:0 0 auto;margin-left:auto;color:var(--sec);border:1px solid var(--sec);padding:2px 9px;font-size:11px}
+.clip-thumb{flex:0 0 auto;align-self:center;margin-left:auto;width:132px;aspect-ratio:16/9;object-fit:cover;background:#000;border:1px solid var(--sec)}
+.clip-thumb + .clip-tag{margin-left:0}
+.clip-inline{flex:0 0 100%;margin-top:14px}
+.clip-inline video{display:block;width:100%;max-width:680px;max-height:70vh;background:#000;border:1px solid var(--sec)}
+.clip-pop{position:fixed;left:0;top:0;z-index:60;width:min(340px,72vw);background:#000;border:1px solid var(--c,#EDEDED);
+  box-shadow:8px 8px 0 0 color-mix(in srgb,var(--c,#EDEDED) 35%,var(--bg));pointer-events:none;opacity:0;visibility:hidden;transition:opacity .15s}
+.clip-pop.on{opacity:1;visibility:visible}
+.clip-pop video{display:block;width:100%;max-height:48vh;object-fit:contain;background:#000}
+.lk-photo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+
+/* VIDEO + SPOTIFY EMBEDS */
+.v-video{position:relative;margin-top:28px;width:100%;max-width:880px;aspect-ratio:16/9;background:#000;border:1px solid var(--sec);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.v-video.small{max-width:480px}
+.v-video .ph{color:var(--muted);text-align:center;padding:0 16px}
+.v-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.spot{margin-top:14px}
+.spot:empty{display:none}
+.spot iframe{display:block;width:100%;height:80px;border:0;border-radius:12px}
+
+/* SONG COVERS */
+.covers{display:flex;flex-wrap:wrap;gap:36px 28px}
+.song{flex:1 1 200px;max-width:260px;min-width:0}
+.cover{
+  position:relative;aspect-ratio:1/1;background:var(--panel);border:1px solid var(--line);
+  overflow:hidden;display:flex;align-items:center;justify-content:center;
+  transition:border-color .25s,transform .25s,box-shadow .25s;
+}
+.cover .ph{color:var(--muted);text-align:center;padding:0 12px}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .35s}
+.song:hover .cover{border-color:var(--sec);transform:translate(-4px,-4px);box-shadow:8px 8px 0 0 #2A2C34;box-shadow:8px 8px 0 0 color-mix(in srgb,var(--sec) 30%,var(--bg))}
+.song:hover .cover img{filter:none}
+.song h3{margin:16px 0 2px;font-size:20px;font-weight:500;letter-spacing:-.02em}
+.song p{margin:0;color:var(--muted)}
+
+/* PRESS */
+.press{display:flex;flex-wrap:wrap;gap:40px}
+.mag{flex:1 1 300px;max-width:520px;min-width:0}
+.mag-img{
+  position:relative;aspect-ratio:4/5;background:var(--panel);border:1px solid var(--line);overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  transition:border-color .25s,transform .25s,box-shadow .25s;
+}
+.mag-img .ph{color:var(--muted);text-align:center;padding:0 12px}
+.mag-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .35s}
+.mag:hover .mag-img{border-color:var(--sec);transform:translate(-4px,-4px);box-shadow:10px 10px 0 0 #2A2C34;box-shadow:10px 10px 0 0 color-mix(in srgb,var(--sec) 30%,var(--bg))}
+.mag:hover .mag-img img{filter:none}
+.mag h3{margin:18px 0 2px;font-size:clamp(40px,6vw,76px);line-height:.95;font-weight:700;letter-spacing:-.04em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px var(--sec)}
+.mag p{margin:6px 0 0;color:var(--muted)}
+
+/* ABOUT */
+.about{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
+.photo{
+  position:relative;flex:1 1 280px;max-width:420px;aspect-ratio:4/5;
+  background:var(--panel);border:1px solid var(--line);overflow:hidden;
+  display:flex;align-items:center;justify-content:center;margin:0;
+}
+.photo .ph{color:var(--muted)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-copy{flex:999 1 340px;min-width:0}
+.about-copy p{margin:0 0 20px;font-size:20px;max-width:620px}
+.about-copy .muted{font-size:17px}
+
+/* TIMELINE */
+.timeline li{display:flex;flex-wrap:wrap;gap:4px 32px;padding:20px 0;border-top:1px solid var(--line)}
+.timeline li:last-child{border-bottom:1px solid var(--line)}
+.timeline .year{flex:0 0 130px;color:var(--sec)}
+.timeline .what{flex:1 1 280px;font-size:19px}
+.timeline .what small{display:block;color:var(--muted);font-size:15px;margin-top:2px}
+
+.timeline li.feature{background:var(--panel);border-top-color:var(--sec);box-shadow:inset 3px 0 0 var(--sec);padding:30px 22px}
+.timeline li.feature .year{color:var(--sec)}
+.timeline li.feature .what{font-size:clamp(26px,3.2vw,38px);font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.tlabel{display:block;margin-top:22px;color:var(--muted);font-weight:400;letter-spacing:.08em}
+.tchips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.tchips span{border:1px solid var(--sec);padding:8px 16px;font-size:clamp(14px,1.5vw,17px);font-weight:500;letter-spacing:0;color:var(--text);transition:all .2s}
+.tchips span:hover{background:var(--sec);color:var(--bg)}
+
+/* CONTACT */
+.contact h2.xl{font-size:clamp(44px,9vw,120px);line-height:.9;letter-spacing:-.05em;max-width:960px}
+.contact p{margin:28px 0 32px;font-size:19px;max-width:520px}
+.socials{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px}
+.socials a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:all .2s}
+.socials a:hover{color:var(--sec);border-color:var(--sec)}
+
+footer{padding:32px 0 48px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+@media (max-width:640px){
+  .hero{padding:56px 0 56px}
+  section{padding:72px 0}
+  .rows .num{flex-basis:52px}
+  .lk-photo{min-height:0;margin-left:10px;margin-right:24px;width:calc(100% - 34px)}
+  .hero-photo{width:72%;opacity:.5}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+  .ticker-track{animation:none}
+}
+
+/* AWARDS: compact */
+#awards{padding:56px 0 64px}
+#awards .sec-head{margin-bottom:26px}
+#awards .ghost{font-size:clamp(100px,16vw,220px)}
+#awards .stat{padding:12px 20px 0 0}
+#awards .stat b.huge{font-size:clamp(32px,4.2vw,50px)}
+#awards .stat b.big{font-size:clamp(20px,2.4vw,28px)}
+#awards .rows li{padding:9px 0;gap:3px 18px}
+#awards .rows li:hover{padding-left:10px}
+#awards .rows .num{flex-basis:52px;font-size:12px}
+#awards .rows .title{font-size:clamp(15px,1.6vw,19px)}
+#awards .rows .title small{font-size:12.5px;margin-top:0}
+#awards .rows.noms .title{font-size:clamp(14px,1.4vw,17px)}
+#awards .rows .meta{font-size:11px}
+#awards .sub{margin:34px 0 12px;font-size:clamp(18px,2.2vw,24px)}
+
+/* TIMELINE: bigger, collapsible tiles */
+#timeline{padding:140px 0}
+#timeline .sec-head{margin-bottom:60px}
+.timeline li.tl{display:block;margin:0 -22px;padding:0 22px;border-top:1px solid var(--line);transition:background .25s,box-shadow .25s,border-color .25s}
+.timeline li.tl:last-child{border-bottom:1px solid var(--line)}
+.timeline li.tl:not(.open):hover{background:var(--panel);box-shadow:inset 3px 0 0 var(--sec)}
+.tl-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px;width:100%;padding:36px 0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.tl-head:focus-visible{outline:2px solid var(--sec);outline-offset:4px}
+.timeline .tl-head .year{flex:0 0 130px;font-size:14px}
+.timeline .tl-head .what{flex:1 1 280px;font-size:clamp(22px,2.6vw,32px);font-weight:500;letter-spacing:-.02em;line-height:1.15}
+.timeline .tl-head .what small{font-size:16px;font-weight:400;letter-spacing:0;margin-top:6px}
+.tl-plus{flex:0 0 auto;align-self:center;margin-left:auto;width:38px;height:38px;border:1px solid var(--sec);color:var(--sec);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:22px;line-height:1;transition:transform .3s,background .2s,color .2s}
+.tl-head:hover .tl-plus{background:var(--sec);color:var(--bg)}
+.timeline li.tl.open{background:var(--panel);border-top-color:var(--sec);box-shadow:inset 3px 0 0 var(--sec)}
+.timeline li.tl.open .tl-head .what{font-size:clamp(28px,3.6vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.timeline li.tl.open .tl-plus{transform:rotate(45deg)}
+.tl-body{display:grid;grid-template-rows:0fr;visibility:hidden;transition:grid-template-rows .4s ease,visibility 0s .4s}
+.timeline li.tl.open .tl-body{grid-template-rows:1fr;visibility:visible;transition:grid-template-rows .4s ease,visibility 0s 0s}
+.tl-inner{overflow:hidden;min-height:0}
+.tl-pad{padding:0 0 38px 162px}
+.tl-desc{margin:0;max-width:700px;font-size:clamp(17px,1.7vw,20px);line-height:1.65;color:var(--text)}
+.tl-pad .tlabel{margin-top:26px}
+.tl-pad .v-video{margin-top:26px;max-width:680px}
+.tl-article{display:flex;align-items:stretch;gap:18px;margin-top:26px;max-width:680px;border:1px solid var(--sec);background:#1A1C21;color:var(--text);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.tl-article:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 0 color-mix(in srgb,var(--sec) 35%,var(--bg))}
+.tl-article.empty{cursor:default}
+.tl-article .thumb{position:relative;flex:0 0 200px;aspect-ratio:16/10;background:var(--panel);border-right:1px solid var(--sec);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.tl-article .thumb .ph{color:var(--muted);text-align:center;padding:0 10px;font-size:11px}
+.tl-article .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tl-article .info{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:16px 18px 16px 0}
+.tl-article .info .mono{color:var(--sec);font-size:11px}
+.tl-article .info strong{font-size:clamp(17px,1.8vw,21px);font-weight:600;line-height:1.2}
+.tl-article .go{color:var(--sec);font-size:20px;line-height:1}
+@media (max-width:760px){
+  .timeline li.tl{margin:0 -12px;padding:0 12px}
+  .tl-head{padding:26px 0}
+  .tl-pad{padding:0 0 30px 0}
+  .tl-article{flex-direction:column;gap:0}
+  .tl-article .thumb{flex:none;width:100%;border-right:0;border-bottom:1px solid var(--sec)}
+  .tl-article .info{padding:14px 16px 16px}
+}
+
+/* ===== HOME: about + 3 buttons ===== */
+.hero-row{margin-top:64px}
+.hero-desc{max-width:560px}
+.hero-desc p.bio{margin:0 0 14px;font-size:16px;line-height:1.65;color:var(--muted);max-width:560px}
+.hero-desc p.bio.lead{color:var(--text);font-size:18px}
+.hero-cta{display:flex;flex-direction:column;gap:12px;width:min(100%,320px)}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border:1.5px solid var(--text);padding:12px 16px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;transition:all .2s}
+.cta:hover{background:var(--text);color:var(--bg)}
+.cta-main{justify-content:space-between;background:var(--text);color:var(--bg);padding:18px 22px;font-size:17px}
+.cta-main:hover{background:transparent;color:var(--text)}
+.cta-main i{font-style:normal}
+.cta-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hero-cta .hero-socials{margin-top:10px}
+
+/* ===== HIGHLIGHTS SLIDESHOW ===== */
+.sl{position:relative;outline:none}
+.sl-viewport{display:grid;overflow:hidden}
+.slide{grid-area:1/1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:center;
+  padding:36px 56px;border:1px solid var(--sec);min-height:min(520px,72vh);
+  background:radial-gradient(ellipse 70% 60% at 90% 0%,color-mix(in srgb,var(--sec) 20%,transparent),transparent 70%),var(--panel);
+  transition:transform .55s cubic-bezier(.6,0,.2,1)}
+.sl-label{margin:0 0 14px;color:var(--sec)}
+.sl-title{margin:0;font-size:clamp(38px,5.4vw,72px);line-height:.9;letter-spacing:-.045em;text-transform:uppercase;font-weight:700}
+.sl-title .outline{color:transparent;-webkit-text-stroke:2px var(--sec)}
+.sl-lead{margin:18px 0 0;font-size:clamp(17px,1.9vw,22px);line-height:1.4;max-width:520px}
+.sl-lead span{color:var(--muted)}
+.sl-stats{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--sec);margin-top:22px}
+.sl-stat{padding:14px 12px 4px 0}
+.sl-stat .mono{margin:0 0 4px;color:var(--muted);font-size:11px}
+.sl-stat b{display:block;font-size:clamp(20px,2.3vw,28px);letter-spacing:-.03em;line-height:1.1}
+.sl-note{margin:14px 0 0;color:var(--muted);font-size:14px}
+.sl-pts{margin-top:20px}
+.sl-pts li{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-top:1px solid color-mix(in srgb,var(--sec) 45%,var(--bg));font-size:clamp(15px,1.5vw,18px);line-height:1.35}
+.sl-pts li:last-child{border-bottom:1px solid color-mix(in srgb,var(--sec) 45%,var(--bg))}
+.sl-pts .n{flex:0 0 26px;color:var(--sec);font-size:12px}
+.sl-pts b{color:var(--sec)}
+.sl-more{display:inline-block;margin-top:16px;color:var(--sec);text-decoration:none;border-bottom:1px solid var(--sec);padding-bottom:2px;font-size:12px}
+.sl-more:hover{color:var(--text);border-color:var(--text)}
+.sl-media{display:flex;align-items:center;justify-content:center;min-width:0}
+.sl-photo{position:relative;margin:0;width:100%;background:#1A1C21;border:1px solid var(--sec);overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:8px 8px 0 0 color-mix(in srgb,var(--sec) 28%,var(--bg))}
+.sl-photo .ph{color:var(--muted);text-align:center;padding:0 10px;font-size:11px}
+.sl-photo img,.sl-photo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sl-photo video{z-index:1}
+.r1x1{aspect-ratio:1/1;max-width:400px}
+.r4x3{aspect-ratio:4/3}
+.r3x4{aspect-ratio:3/4;max-width:300px}
+.sl-media.duo{display:grid;grid-template-columns:5fr 6fr;gap:16px;align-items:center}
+.duo .r3x4{max-width:none;align-self:start}
+.duo .r4x3{align-self:end}
+.sl-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--bg);border:1.5px solid var(--text);color:var(--text);font-size:20px;cursor:pointer;transition:background .2s,color .2s}
+.sl-btn.prev{left:-16px}
+.sl-btn.next{right:-16px}
+.sl-btn:hover{background:var(--text);color:var(--bg)}
+.sl-btn.nudge{animation:nudge 1.2s ease-out 2}
+@keyframes nudge{0%{box-shadow:0 0 0 0 rgba(237,237,237,.55)}100%{box-shadow:0 0 0 14px rgba(237,237,237,0)}}
+.sl-hint{position:absolute;right:-16px;bottom:calc(50% + 32px);z-index:5;padding:5px 10px;font-size:11px;background:var(--bg);border:1px solid var(--text);color:var(--text);white-space:nowrap;pointer-events:none;opacity:0;transform:translateY(6px);transition:opacity .5s,transform .5s}
+.sl-hint::after{content:"";position:absolute;right:16px;bottom:-6px;width:9px;height:9px;background:var(--bg);border-right:1px solid var(--text);border-bottom:1px solid var(--text);transform:rotate(45deg)}
+.sl-hint.on{opacity:1;transform:none}
+.sl-foot{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:20px}
+.sl-count{color:var(--muted)}
+.sl-dots{display:flex;gap:8px}
+.sl-dot{width:28px;height:12px;padding:4px 0;border:0;background:#4A4D59;background-clip:content-box;cursor:pointer;transition:background .2s}
+.sl-dot.on{background:var(--text);background-clip:content-box}
+@media (max-width:820px){
+  .slide{grid-template-columns:1fr;gap:26px;padding:26px 30px;min-height:0}
+  .sl-btn{width:38px;height:38px}
+  .sl-btn.prev{left:-12px}.sl-btn.next{right:-12px}
+  .sl-hint{right:-12px;bottom:auto;top:calc(50% - 56px)}
+  .sl-hint::after{right:11px}
+  .r1x1,.r3x4{max-width:300px}
+  .sl-media{justify-content:flex-start}
+}
+
+/* ===== BRANDS: compact ===== */
+#partnerships{padding:56px 0 64px}
+#partnerships .sec-head{margin-bottom:28px}
+#partnerships .ghost{font-size:clamp(100px,16vw,220px)}
+.brands{grid-template-columns:repeat(7,1fr);gap:14px}
+.brand{padding:14px 14px 16px;gap:10px}
+.brand h3{font-size:clamp(18px,2vw,26px)}
+.brand .mono{font-size:11px}
+.brand .tags li{font-size:12px;padding:4px 9px}
+.brand-logo{margin-top:auto}
+.brand.main{padding:22px 24px;gap:20px 36px}
+.brand.main h3{font-size:clamp(64px,9vw,120px)}
+.brand.main .what{font-size:16px}
+.brand.main .tags li{font-size:13px;padding:6px 12px}
+.brand.main .brand-photo{flex:1 1 240px;max-width:320px}
+.brands-credit{margin-top:18px}
+@media (max-width:900px){.brands{grid-template-columns:repeat(2,1fr)}.brand.wide{grid-column:1/-1}}
+
+/* ===== AWARDS: country chips ===== */
+.ctry{flex:0 0 auto;padding:2px 9px;border:1px solid var(--line);color:var(--muted);font-size:10.5px;white-space:nowrap}
+.ctry.nat{border-color:var(--sec);color:var(--sec)}
+.ctry.intl{background:var(--text);border-color:var(--text);color:var(--bg)}
+
+/* ===== SONGS: back button ===== */
+.back-top{margin-top:56px}
+
+/* ===== ROUND 3 ===== */
+/* flags */
+.flag{flex:0 0 auto;align-self:center;display:block;width:28px;height:21px;object-fit:cover;border:1px solid rgba(255,255,255,.28);box-shadow:0 1px 3px rgba(0,0,0,.5)}
+#awards .rows li{align-items:center}
+/* brand slide photos stacked: Bench on top, vivo below */
+.sl-media.duo{display:flex;flex-direction:column;gap:14px;width:100%;max-width:224px;margin:0 auto}
+.sl-media.duo .sl-photo{max-width:none;width:100%;align-self:stretch}
+/* Korean music shows: history note */
+.shows .note{margin:26px 0 0;padding:14px 18px;font-size:17px;line-height:1.5;font-weight:500;border-left:3px solid var(--c);background:rgba(255,255,255,.07)}
+/* brand photos fill their frames, in full colour */
+.brand-logo img{inset:0;width:100%;height:100%;object-fit:cover}
+.brand-photo img{filter:none}
+.brand:hover .brand-photo img{filter:none}
+/* press: 4 across, 3:4 portrait photos */
+.press{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+.mag{max-width:none}
+.mag-img{aspect-ratio:3/4}
+.mag h3{font-size:clamp(26px,3vw,38px);margin-top:16px}
+
+/* ===== ROUND 4: lighter look, accent, motion ===== */
+.acc{color:var(--accent)!important;font-weight:700}
+section{background-image:radial-gradient(ellipse 60% 45% at 0% 0%,color-mix(in srgb,var(--sec) 11%,transparent),transparent 72%),linear-gradient(180deg,rgba(255,255,255,.03),transparent 40%)}
+.hero{background:radial-gradient(ellipse 60% 70% at 15% 0%,rgba(255,255,255,.06),transparent 70%)}
+.hero-photo{bottom:0}
+.hero{padding-bottom:0}
+.hero::after{content:"";position:absolute;inset:-20%;pointer-events:none;z-index:0;
+  background:radial-gradient(circle 380px at 18% 35%,rgba(246,196,83,.13),transparent 70%),radial-gradient(circle 440px at 82% 65%,rgba(140,180,255,.13),transparent 70%);
+  animation:drift 20s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(6%,-5%,0) scale(1.12)}}
+.hero .ticker-wrap{position:relative;z-index:1;margin-top:80px;padding:26px 0 40px;border-bottom:0}
+.hero .ticker{background:rgba(241,241,244,.06)}
+.hero-desc p.bio .acc{font-size:inherit}
+/* load-in */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.hero .mono.top{animation:rise .7s ease both}
+.hero h1{animation:rise .9s .1s ease both}
+.hero-desc{animation:rise .9s .3s ease both}
+.hero-cta{animation:rise .9s .5s ease both}
+/* scroll reveal */
+.js .rv{opacity:0}
+.js .rv.in{opacity:1;animation:rise .8s ease backwards;animation-delay:var(--d,0s)}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.sec-head::after{transform-origin:left}
+.js .sec-head.in::after{animation:grow 1.1s .25s ease backwards}
+/* corner plus markers breathe */
+section::before,section::after{animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.3}}
+/* slideshow: content eases in on each slide */
+.slide.active .sl-copy>*{animation:rise .7s ease backwards}
+.slide.active .sl-copy>:nth-child(2){animation-delay:.07s}
+.slide.active .sl-copy>:nth-child(3){animation-delay:.14s}
+.slide.active .sl-copy>:nth-child(4){animation-delay:.21s}
+.slide.active .sl-copy>:nth-child(5){animation-delay:.28s}
+.slide.active .sl-copy>:nth-child(6){animation-delay:.35s}
+.slide.active .sl-photo{animation:rise .8s .15s ease backwards}
+/* scroll progress */
+.progress{position:fixed;left:0;top:0;height:2px;width:100%;z-index:101;background:var(--accent);transform:scaleX(0);transform-origin:left;pointer-events:none}
+/* soft shimmer on outlined titles */
+h1 .outline{background:linear-gradient(100deg,transparent 35%,rgba(246,196,83,.55) 50%,transparent 65%) 0 0/250% 100% no-repeat;-webkit-background-clip:text;background-clip:text;animation:shimmer 7s ease-in-out infinite}
+@keyframes shimmer{0%,55%{background-position:130% 0}100%{background-position:-30% 0}}
+
+/* ===== ROUND 5: hero fills the first screen, more idle motion ===== */
+.hero{display:flex;flex-direction:column;min-height:calc(100vh - 62px);min-height:calc(100svh - 62px);padding:48px 0 0}
+.hero .wrap{flex:1 0 auto;display:flex;flex-direction:column;justify-content:center}
+.hero-photo{top:-48px}
+.hero .mono.top{margin:0 0 clamp(16px,3vh,32px)}
+.hero h1{font-size:clamp(40px,min(8.6vw,15.5vh),118px)}
+.hero-row{margin-top:clamp(24px,5vh,56px)}
+.hero .ticker-wrap{flex:0 0 auto;margin-top:0;padding:clamp(14px,2.4vh,26px) 0 clamp(22px,3.6vh,38px)}
+.hero .ticker span{font-size:clamp(24px,3.6vw,48px);padding:10px 18px}
+@media (max-width:640px){.hero{padding:40px 0 0}}
+
+/* idle motion (uses "translate" so hover effects keep working) */
+@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -5px}}
+@keyframes kb{from{scale:1}to{scale:1.07}}
+@keyframes ring{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--sec) 55%,transparent)}70%,100%{box-shadow:0 0 0 12px color-mix(in srgb,var(--sec) 0%,transparent)}}
+@keyframes ring2{0%{box-shadow:0 0 0 0 rgba(246,196,83,.5)}70%,100%{box-shadow:0 0 0 14px rgba(246,196,83,0)}}
+@keyframes glow{0%,100%{text-shadow:0 0 0 transparent}50%{text-shadow:0 0 22px color-mix(in srgb,var(--sec) 55%,transparent)}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 4px}}
+@keyframes ghostpulse{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes gridpan{to{background-position:72px 72px,72px 72px}}
+@keyframes dot{0%,100%{color:var(--muted)}50%{color:var(--accent)}}
+.hero::before{animation:gridpan 30s linear infinite}
+.logo span{animation:dot 3s ease-in-out infinite}
+.cta-main i{display:inline-block;animation:bob 2.2s ease-in-out infinite}
+.ghost{animation:ghostpulse 9s ease-in-out infinite}
+.sl-photo img{animation:kb 16s ease-in-out infinite alternate}
+.sl-photo{animation:floaty 7s ease-in-out infinite}
+.slide.active .sl-photo{animation:rise .8s .15s ease backwards,floaty 7s 1s ease-in-out infinite}
+.sl-media.duo .sl-photo+.sl-photo{animation-delay:-3s}
+.song .cover,.mag-img,.show,.brand{animation:floaty 7s ease-in-out infinite}
+.song:nth-child(2n) .cover,.mag:nth-child(2n) .mag-img,.show:nth-child(2n),.brand:nth-child(2n){animation-delay:-2.5s}
+.song:nth-child(3n) .cover,.mag:nth-child(3n) .mag-img,.show:nth-child(3n),.brand:nth-child(3n){animation-delay:-4.5s}
+.tl:not(.open) .tl-plus{animation:ring 4.5s ease-out infinite}
+.tl:nth-child(2n):not(.open) .tl-plus{animation-delay:-1.5s}
+.tl:nth-child(3n):not(.open) .tl-plus{animation-delay:-3s}
+.stat b.huge{animation:glow 6s ease-in-out infinite}
+.clip-tag{animation:ghostpulse 3.5s ease-in-out infinite}
+.contact .btn.solid,.back-top .btn.solid{animation:ring2 4.5s ease-out infinite}
+.venue.main .tag{animation:ring 5s ease-out infinite}
+.flag{animation:floaty 6s ease-in-out infinite}
+.rows li:nth-child(2n) .flag{animation-delay:-3s}
+.sl-dot.on{animation:ghostpulse 3s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1}
+  .hero::after,section::before,section::after,h1 .outline,.sl-btn.nudge{animation:none!important}
+  *,*::before,*::after{animation:none!important}
+}
+
+/* ===== Brand slide: overlapping photo collage that fills the column ===== */
+.sl-media.duo{display:block;position:relative;width:100%;max-width:470px;aspect-ratio:1/1;margin:0 auto;gap:0}
+.sl-media.duo .sl-photo{position:absolute;max-width:none;align-self:auto}
+.sl-media.duo .r3x4{left:0;top:0;width:62%;z-index:1}
+.sl-media.duo .r4x3{right:0;bottom:0;width:68%;z-index:2;box-shadow:8px 8px 0 0 color-mix(in srgb,var(--sec) 28%,var(--bg))}
+@media (max-width:820px){.sl-media.duo{max-width:420px;margin:0}}
+
+/* ===== Round 7 ===== */
+.v-photos{max-height:none;opacity:1;margin-top:24px;overflow:visible}
+.cover img,.mag-img img{filter:none}
+
+/* ===== Round 8: clearer nav + moving minimalist backgrounds ===== */
+.links{gap:8px 10px}
+.links a{padding:8px 14px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--text);font-weight:500;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.links a:hover{background:var(--accent);border-color:var(--accent);color:#17181D;transform:translateY(-2px)}
+.links a.on{border-color:var(--accent);color:var(--accent);background:rgba(246,196,83,.1)}
+.links a.on:hover{color:#17181D}
+.hero{min-height:calc(100vh - 74px);min-height:calc(100svh - 74px)}
+.bgfx{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.bgfx i{position:absolute;display:block}
+.fx-ring{width:min(46vw,520px);aspect-ratio:1;left:-9%;top:10%;border:1px solid color-mix(in srgb,var(--sec) 30%,transparent);border-radius:50%;animation:spin 70s linear infinite}
+.fx-ring::after{content:"";position:absolute;top:-4px;left:50%;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--sec);opacity:.7}
+.fx-ring2{width:min(30vw,340px);aspect-ratio:1;right:-5%;bottom:6%;border:1px dashed color-mix(in srgb,var(--sec) 32%,transparent);border-radius:50%;animation:spin 90s linear infinite reverse}
+.fx-ring2::after{content:"";position:absolute;bottom:-4px;left:50%;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--sec);opacity:.6}
+.fx-dots{inset:0;background-image:radial-gradient(color-mix(in srgb,var(--sec) 45%,transparent) 1.2px,transparent 1.8px);background-size:38px 38px;opacity:.5;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 85% 30%,#000,transparent 75%);mask-image:radial-gradient(ellipse 80% 70% at 85% 30%,#000,transparent 75%);animation:dotpan 45s linear infinite}
+.fx-lines{inset:-40%;background:repeating-linear-gradient(115deg,transparent 0 54px,color-mix(in srgb,var(--sec) 13%,transparent) 54px 55px);animation:linepan 40s linear infinite}
+.fx-sq{width:12px;height:12px;border:1px solid color-mix(in srgb,var(--sec) 55%,transparent);bottom:-30px;animation:rise2 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes dotpan{to{background-position:38px 38px}}
+@keyframes linepan{to{transform:translate3d(110px,0,0)}}
+@keyframes rise2{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.8}90%{opacity:.8}100%{transform:translateY(-110vh) rotate(180deg);opacity:0}}
+.hero .fx-ring{display:none}
+</style>
+</head>
+<body>
+<div class="progress" id="prog" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">MARCUS<span>.</span></a>
+    <nav class="links mono" aria-label="Main">
+      <a href="#highlights">Highlights</a>
+      <a href="#timeline">My Story</a>
+      <a href="#stages">Stages</a>
+      <a href="#songwriting">Songs</a>
+      <a href="#partnerships">Brands</a>
+      <a href="#awards">Awards</a>
+      <a href="#press">Press</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <figure class="hero-photo">
+        <span class="ph mono">[ Your face here ]</span>
+        <!-- Upload a portrait as images/hero.jpg. A photo with a plain or dark background works best. -->
+        <img src="images/hero.jpg" alt="Portrait of Marcus Cabais" onload="this.previousElementSibling.style.display='none'" onerror="this.style.display='none'">
+      </figure>
+      <p class="mono top"><b>Portfolio</b></p>
+      <h1>Marcus<br><span class="outline">Cabais</span></h1>
+      <div class="hero-row">
+        <div class="hero-desc">
+          <p class="roles">Singer &middot; Songwriter &middot; Composer &middot; Actor &middot; Host &middot; Model &middot; Brand Ambassador</p>
+          <p class="bio lead">I'm Marcus, from the Philippines.</p>
+          <p class="bio">I started performing at age 3, and went on to play <span class="acc">YOUNG SIMBA</span> in The Lion King, the world's #1 musical. I debuted in South Korea with <span class="acc">HORI7ON</span> as the <span class="acc">YOUNGEST MALE K-POP IDOL EVER TO DEBUT</span>.</p>
+          <p class="bio">Music is my passion. I love writing songs in Tagalog and English, and I aspire to be the best artist I can be.</p>
+        </div>
+        <div class="hero-cta">
+          <a class="cta cta-main" href="#highlights"><span>Highlights</span><i aria-hidden="true">&darr;</i></a>
+          <div class="cta-row">
+            <a class="cta" href="#timeline">My Story</a>
+            <a class="cta" href="#songwriting">Songs</a>
+          </div>
+          <div class="hero-socials mono">
+            <!-- REPLACE each "#" with the real profile link -->
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" target="_blank" rel="noopener">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <div class="ticker-track">
+        <div class="half">
+          <span>Singer</span><i>/</i><span class="o">Actor</span><i>/</i><span>Host</span><i>/</i><span class="o">Songwriter</span><i>/</i><span>Composer</span><i>/</i><span class="o">Model</span><i>/</i><span>Brand Ambassador</span><i>/</i><span class="o">Singer</span><i>/</i><span>Actor</span><i>/</i><span class="o">Host</span><i>/</i><span>Songwriter</span><i>/</i><span class="o">Composer</span><i>/</i><span>Model</span><i>/</i><span class="o">Brand Ambassador</span><i>/</i><span>Singer</span><i>/</i><span class="o">Actor</span><i>/</i><span>Host</span><i>/</i><span class="o">Songwriter</span><i>/</i><span>Composer</span><i>/</i><span class="o">Model</span><i>/</i><span>Brand Ambassador</span><i>/</i><span class="o">Singer</span><i>/</i><span>Actor</span><i>/</i><span class="o">Host</span><i>/</i><span>Songwriter</span><i>/</i><span class="o">Composer</span><i>/</i><span>Model</span><i>/</i><span class="o">Brand Ambassador</span><i>/</i>
+        </div>
+        <div class="half">
+          <span>Singer</span><i>/</i><span class="o">Actor</span><i>/</i><span>Host</span><i>/</i><span class="o">Songwriter</span><i>/</i><span>Composer</span><i>/</i><span class="o">Model</span><i>/</i><span>Brand Ambassador</span><i>/</i><span class="o">Singer</span><i>/</i><span>Actor</span><i>/</i><span class="o">Host</span><i>/</i><span>Songwriter</span><i>/</i><span class="o">Composer</span><i>/</i><span>Model</span><i>/</i><span class="o">Brand Ambassador</span><i>/</i><span>Singer</span><i>/</i><span class="o">Actor</span><i>/</i><span>Host</span><i>/</i><span class="o">Songwriter</span><i>/</i><span>Composer</span><i>/</i><span class="o">Model</span><i>/</i><span>Brand Ambassador</span><i>/</i><span class="o">Singer</span><i>/</i><span>Actor</span><i>/</i><span class="o">Host</span><i>/</i><span>Songwriter</span><i>/</i><span class="o">Composer</span><i>/</i><span>Model</span><i>/</i><span class="o">Brand Ambassador</span><i>/</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- HIGHLIGHTS (SLIDESHOW) -->
+  <section id="highlights">
+    <span class="ghost" aria-hidden="true">01</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">01</span><h2>Highlights</h2></div>
+      <!-- To edit a slide: change the words inside it. Each slide keeps 4 points. Photos go in images/highlights/ -->
+      <div class="sl" id="slideshow" role="region" aria-roledescription="carousel" aria-label="Highlights" tabindex="0">
+        <button class="sl-btn prev" type="button" aria-label="Previous slide"><span aria-hidden="true">&larr;</span></button>
+        <button class="sl-btn next" type="button" aria-label="Next slide"><span aria-hidden="true">&rarr;</span></button>
+        <span class="sl-hint mono" aria-hidden="true">Click here &darr;</span>
+        <div class="sl-viewport">
+
+          <!-- SLIDE 1: THE LION KING (photo: images/lion-king.jpg, square) -->
+          <article class="slide" style="--sec:#FFA62B" aria-label="Slide 1 of 4: The Lion King">
+            <div class="sl-copy">
+              <p class="mono sl-label">01 / Acting</p>
+              <h3 class="sl-title">The<br><span class="outline">Lion King</span></h3>
+              <p class="sl-lead">Young Simba, in the world's #1 musical. <span>The biggest role in the show, with the longest character runtime.</span></p>
+              <div class="sl-stats">
+                <div class="sl-stat"><p class="mono">Role</p><b>Young Simba</b></div>
+                <div class="sl-stat"><p class="mono">Years</p><b>2018 to 2020</b></div>
+                <div class="sl-stat"><p class="mono">Countries</p><b>5</b></div>
+                <div class="sl-stat"><p class="mono">Cities</p><b>7</b></div>
+              </div>
+              <p class="sl-note">Asian tour: Singapore, South Korea, Taiwan, Thailand and Hong Kong.</p>
+            </div>
+            <div class="sl-media">
+              <figure class="sl-photo r1x1">
+                <span class="ph mono">[ Lion King photo ]</span>
+                <img src="images/lion-king.jpg" alt="Marcus Cabais as young Simba in The Lion King" onerror="this.style.display='none'">
+                <video src="videos/lion-king.mp4" autoplay muted loop playsinline preload="metadata" onerror="this.style.display='none'"></video>
+              </figure>
+            </div>
+          </article>
+
+          <!-- SLIDE 2: K-POP / HORI7ON (photo: images/highlights/hori7on.jpg, 4:3 landscape) -->
+          <article class="slide" style="--sec:#8FB8FF;visibility:hidden;transform:translateX(100%)" aria-label="Slide 2 of 4: K-pop and HORI7ON">
+            <div class="sl-copy">
+              <p class="mono sl-label">02 / Performing</p>
+              <h3 class="sl-title">K-pop<br><span class="outline">HORI7ON</span></h3>
+              <p class="sl-lead">Debuted in South Korea as the youngest male K-pop idol ever to debut.</p>
+              <ol class="sl-pts">
+                <li><span class="n mono">01</span><span>Joined Dream Maker at 13 and went on to win.</span></li>
+                <li><span class="n mono">02</span><span>One of 7 winners, chosen out of thousands who auditioned.</span></li>
+                <li><span class="n mono">03</span><span>The winners became a group and trained in South Korea.</span></li>
+                <li><span class="n mono">04</span><span>Debuted in July 2023 as HORI7ON, the first all-Filipino group on Korean music shows.</span></li>
+              </ol>
+            </div>
+            <div class="sl-media">
+              <figure class="sl-photo r4x3">
+                <span class="ph mono">[ HORI7ON photo ]</span>
+                <img src="images/highlights/hori7on.jpg" alt="Marcus Cabais with HORI7ON" onerror="this.style.display='none'">
+              </figure>
+            </div>
+          </article>
+
+          <!-- SLIDE 3: BRANDS (photos: images/highlights/bench.jpg portrait 3:4, images/highlights/vivo.jpg landscape 4:3) -->
+          <article class="slide" style="--sec:#CDAA5E;visibility:hidden;transform:translateX(100%)" aria-label="Slide 3 of 4: Brands">
+            <div class="sl-copy">
+              <p class="mono sl-label">03 / Brands</p>
+              <h3 class="sl-title">Brand<br><span class="outline">Ambassador</span></h3>
+              <p class="sl-lead">Partnering with national and international brands <span>across audio, retail, fashion and tech.</span></p>
+              <ol class="sl-pts">
+                <li><span class="n mono">01</span><span><b>6 brands</b> so far, national and international.</span></li>
+                <li><span class="n mono">02</span><span><b>JBL</b>, as brand ambassador.</span></li>
+                <li><span class="n mono">03</span><span><b>SM Supermalls</b>, as brand ambassador.</span></li>
+                <li><span class="n mono">04</span><span><b>Bench, Samsung, vivo</b> and <b>Straightforward</b>.</span></li>
+              </ol>
+              <a class="sl-more mono" href="#partnerships">More below &darr;</a>
+            </div>
+            <div class="sl-media duo">
+              <figure class="sl-photo r3x4">
+                <span class="ph mono">[ Bench ]</span>
+                <img src="images/highlights/bench.jpg" alt="Marcus Cabais for Bench" onerror="this.style.display='none'">
+              </figure>
+              <figure class="sl-photo r4x3">
+                <span class="ph mono">[ vivo ]</span>
+                <img src="images/highlights/vivo.jpg" alt="Marcus Cabais for vivo" onerror="this.style.display='none'">
+              </figure>
+            </div>
+          </article>
+
+          <!-- SLIDE 4: AWARDS (photo: images/highlights/awards.jpg, 3:4 portrait) -->
+          <article class="slide" style="--sec:#D4505A;visibility:hidden;transform:translateX(100%)" aria-label="Slide 4 of 4: Awards">
+            <div class="sl-copy">
+              <p class="mono sl-label">04 / Awards</p>
+              <h3 class="sl-title">Awards<br><span class="outline">Worldwide</span></h3>
+              <p class="sl-lead">Recognized by award shows in different countries <span>as a soloist, with HORI7ON and in the competitions that started it all.</span></p>
+              <ol class="sl-pts">
+                <li><span class="n mono">01</span><span><b>17 awards</b> won, from 2016 to 2026.</span></li>
+                <li><span class="n mono">02</span><span>From <b>4 countries</b>: Philippines, South Korea, Brazil and the United States.</span></li>
+                <li><span class="n mono">03</span><span><b>11 national</b> and <b>6 international</b> wins.</span></li>
+                <li><span class="n mono">04</span><span>Including Asia Artist Awards, Korea Hallyu Awards and BreakTudo Awards.</span></li>
+              </ol>
+              <a class="sl-more mono" href="#awards">More below &darr;</a>
+            </div>
+            <div class="sl-media">
+              <figure class="sl-photo r3x4">
+                <span class="ph mono">[ Awards photo ]</span>
+                <img src="images/highlights/awards.jpg" alt="Marcus Cabais at an awards show" onerror="this.style.display='none'">
+              </figure>
+            </div>
+          </article>
+
+        </div>
+        <div class="sl-foot">
+          <span class="sl-count mono">01 / 04</span>
+          <div class="sl-dots">
+            <button class="sl-dot on" type="button" aria-label="Go to slide 1"></button>
+            <button class="sl-dot" type="button" aria-label="Go to slide 2"></button>
+            <button class="sl-dot" type="button" aria-label="Go to slide 3"></button>
+            <button class="sl-dot" type="button" aria-label="Go to slide 4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" style="--sec:#B07AA1">
+    <span class="ghost" aria-hidden="true">02</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">02</span><h2>My Story</h2></div>
+      <ul class="timeline">
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-1">
+            <span class="year mono">2013 to 2018</span>
+            <span class="what">Commercial model<small>Comfortable in front of the camera from a young age</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-1"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">Before the stage and the screen, I was already used to being on camera. From 2013 to 2018 I worked with household names in food, toys and real estate, and those years built the confidence and ease in front of the lens that carried into everything that came after.</p>
+            <p class="tlabel mono">Brands I worked with</p>
+              <div class="tchips"><span>Nestle United</span><span>Nestle Bear Brand</span><span>Jack 'n Jill Knots</span><span>Magnolia Cheese Milky White</span><span>Toy Kingdom</span><span>Carmona Real Estate</span><span>Moose Gear</span></div>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-2">
+            <span class="year mono">2015</span>
+            <span class="what">It's Showtime "Mini Me"<small>First TV performance</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-2"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">My first time performing on TV. Stepping out as Mini Bon Jovi on It's Showtime introduced me to a big audience at a young age, and it was the moment I knew performing was what I wanted to do.</p>
+            <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= -->
+              <div class="v-video" data-youtube="" data-title="Marcus Cabais on It's Showtime as Mini Me"><span class="ph mono">[ YouTube video ]</span></div>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-3">
+            <span class="year mono">2016</span>
+            <span class="what">SM Little Stars, Boy Grand Winner<small>First competition win</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-3"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">My first competition win. Entering SM Supermalls' SM Little Stars, I was named Boy Grand Winner, a title that proved I could stand out on a big stage and gave me the push to keep going.</p>
+            <!-- ARTICLE LINK: paste the article address between the quotes after href= . Thumbnail: save a picture as images/timeline/sm-little-stars.jpg -->
+              <a class="tl-article" href="" target="_blank" rel="noopener">
+                <span class="thumb"><span class="ph mono">[ Thumbnail ]</span><img src="images/timeline/sm-little-stars.jpg" alt="Marcus Cabais at SM Little Stars" onerror="this.style.display='none'"></span>
+                <span class="info"><span class="mono">Article</span><strong>Read the article</strong><span class="go" aria-hidden="true">&nearr;</span></span>
+              </a>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-4">
+            <span class="year mono">2017</span>
+            <span class="what">Cartoon Network Rockstar, Grand Winner<small>Performed as a voice actor in Cha-Ching Money Smart Kids by Prudence Foundation and Pru Life UK</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-4"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">I was named Grand Winner of Cartoon Network Rockstar, and the prize was a real opportunity: they flew me to Singapore to work on a project. There I performed as a voice actor in Cha-Ching Money Smart Kids by Prudence Foundation and Pru Life UK, my first time taking my talent abroad.</p>
+            <!-- ARTICLE LINK: paste the article address between the quotes after href= . Thumbnail: save a picture as images/timeline/cartoon-network-rockstar.jpg -->
+              <a class="tl-article" href="" target="_blank" rel="noopener">
+                <span class="thumb"><span class="ph mono">[ Thumbnail ]</span><img src="images/timeline/cartoon-network-rockstar.jpg" alt="Marcus Cabais at Cartoon Network Rockstar" onerror="this.style.display='none'"></span>
+                <span class="info"><span class="mono">Article</span><strong>Read the article</strong><span class="go" aria-hidden="true">&nearr;</span></span>
+              </a>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-6">
+            <span class="year mono">2018</span>
+            <span class="what">Film debut in My 2 Mommies<small>Played a lead role</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-6"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">I made my film debut in My 2 Mommies, and in a lead role. Carrying a story on screen for the first time showed me, and audiences, that my range goes well beyond singing and the stage.</p>
+            <!-- ARTICLE LINK: paste the article address between the quotes after href= . Thumbnail: save a picture as images/timeline/my-2-mommies.jpg -->
+              <a class="tl-article" href="" target="_blank" rel="noopener">
+                <span class="thumb"><span class="ph mono">[ Thumbnail ]</span><img src="images/timeline/my-2-mommies.jpg" alt="Marcus Cabais in My 2 Mommies" onerror="this.style.display='none'"></span>
+                <span class="info"><span class="mono">Article</span><strong>Read the article</strong><span class="go" aria-hidden="true">&nearr;</span></span>
+              </a>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-5">
+            <span class="year mono">2018 to 2020</span>
+            <span class="what">Young Simba in Disney's The Lion King<small>Asian tour</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-5"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">I played Young Simba in Disney's The Lion King, the world's #1 musical, on an Asian tour through 5 countries and regions and 7 cities. It is the biggest role in the show with the longest character runtime, and I played the role for two full years.</p>
+            <!-- ARTICLE LINK: paste the article address between the quotes after href= . Thumbnail: save a picture as images/timeline/lion-king-article.jpg -->
+              <a class="tl-article" href="" target="_blank" rel="noopener">
+                <span class="thumb"><span class="ph mono">[ Thumbnail ]</span><img src="images/timeline/lion-king-article.jpg" alt="Marcus Cabais as Young Simba" onerror="this.style.display='none'"></span>
+                <span class="info"><span class="mono">Article</span><strong>Read the article</strong><span class="go" aria-hidden="true">&nearr;</span></span>
+              </a>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-7">
+            <span class="year mono">2022</span>
+            <span class="what">Dream Maker<small>Youngest contestant, and one of 7 winners</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-7"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">At just 13, I was the youngest contestant on Dream Maker. Thousands of people auditioned to be part of the program, and just over 100 were called back for a few weeks of training. The show started with 62 contestants, and I was one of the 7 who won, which opened the door to my K-pop journey.</p>
+            <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= -->
+              <div class="v-video" data-youtube="" data-title="Marcus Cabais on Dream Maker"><span class="ph mono">[ YouTube video ]</span></div>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-8">
+            <span class="year mono">2023</span>
+            <span class="what">Debut with HORI7ON<small>Album: Friend-Ship</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-8"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">Because I won Dream Maker, the winners were put together as a group and we flew to South Korea for rigorous training, and in July 2023 I debuted with the global boy group HORI7ON as the youngest male K-pop idol ever to debut. Together we made history as the first all-Filipino group to perform on Korean music shows, and the first artist ever to perform a Filipino song on them, all while releasing our album Friend-Ship.</p>
+            <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= -->
+              <div class="v-video" data-youtube="" data-title="HORI7ON debut"><span class="ph mono">[ YouTube video ]</span></div>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-9">
+            <span class="year mono">Current</span>
+            <span class="what">The next chapter<small>Now</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-9"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">Right now I'm working and striving toward the next chapter of my career. In my free time I'm working on my music, and I'm seizing every opportunity that unfolds along the way.</p>
+          </div></div></div>
+        </li>
+        <!-- ADD A NEW MILESTONE: copy one whole <li class="tl"> block above, paste it below, change the year, title, description and the video or article inside -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- MAJOR STAGES -->
+  <section id="stages" style="--sec:#EBA487">
+    <span class="ghost" aria-hidden="true">03</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">03</span><h2>Major stages</h2></div>
+      <div class="venues">
+
+        <article class="venue main">
+          <p class="mono tag">01 / Biggest indoor stadium in the world</p>
+          <h3>Philippine<span class="o">Arena</span></h3>
+          <p class="what">Summer Blast 2025</p>
+          <p class="what">Asia Artist Awards 2023</p>
+          <!-- Add what you performed here and when, like: <p class="what">Event name, Month Year</p> -->
+          <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= and it becomes a playable video -->
+          <div class="v-video" data-youtube="" data-title="Marcus Cabais at Philippine Arena"><span class="ph mono">[ YouTube video ]</span></div>
+        </article>
+
+        <article class="venue">
+          <p class="mono">02 / Concert</p>
+          <h3>Araneta<span class="o">Coliseum</span></h3>
+          <p class="what">ROUND Festival, April 2026</p>
+          <p class="what">Friend-SHIP: Voyage to Manila, September 2023</p>
+          <div class="v-photos">
+            <figure class="v-photo"><span class="ph mono">[ Photo ]</span><img src="images/stages/araneta-coliseum.jpg" alt="Marcus Cabais performing at Araneta Coliseum" onerror="this.style.display='none'"></figure>
+            <!-- ADD ANOTHER PHOTO: copy a whole <figure> line above, paste it below, change the file name -->
+          </div>
+        </article>
+
+        <article class="venue">
+          <p class="mono">03 / Concert</p>
+          <h3>MOA<span class="o">Arena</span></h3>
+          <p class="what">Bench Shoot of Asia, October 2025</p>
+          <p class="what">Global Youth Summit, August 2025</p>
+          <p class="what">Daytour: Anchor High, November 2024</p>
+          <p class="what">Watsons Playlist, August 2024</p>
+          <div class="v-photos">
+            <figure class="v-photo"><span class="ph mono">[ Photo ]</span><img src="images/stages/moa-arena.jpg" alt="Marcus Cabais performing at MOA Arena" onerror="this.style.display='none'"></figure>
+            <!-- ADD ANOTHER PHOTO: copy a whole <figure> line above, paste it below, change the file name -->
+          </div>
+        </article>
+
+        <article class="venue">
+          <p class="mono">04 / South Korea</p>
+          <h3>Gangneung<span class="o">Olympic Park</span></h3>
+          <p class="what">Winter Youth Olympics 2024 opening ceremony, South Korea, January 2024</p>
+          <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= and it becomes a playable video -->
+          <div class="v-video small" data-youtube="" data-title="Marcus Cabais at the Winter Youth Olympics 2024 opening ceremony"><span class="ph mono">[ YouTube video ]</span></div>
+        </article>
+
+        <!-- ADD ANOTHER STAGE: copy one whole <article class="venue"> block above, paste it below, change the words -->
+
+      </div>
+
+      <div class="shows">
+        <div class="shows-head">
+          <h3 class="sub" style="margin:0">Korean music shows</h3>
+          <p class="logo-credit mono">Show names and logos belong to their respective owners.<br>Shown only to identify the shows I performed on.</p>
+        </div>
+        <ul class="show-grid">
+          <li class="show">
+            <div class="logo"><span class="ph mono">[ Logo ]</span><img src="images/shows/m-countdown.png" alt="M Countdown logo" onerror="this.style.display='none'"></div>
+            <span class="name">M Countdown</span>
+          </li>
+          <li class="show">
+            <div class="logo"><span class="ph mono">[ Logo ]</span><img src="images/shows/music-bank.png" alt="Music Bank logo" onerror="this.style.display='none'"></div>
+            <span class="name">Music Bank</span>
+          </li>
+          <li class="show">
+            <div class="logo"><span class="ph mono">[ Logo ]</span><img src="images/shows/music-core.png" alt="Show! Music Core logo" onerror="this.style.display='none'"></div>
+            <span class="name">Show! Music Core</span>
+          </li>
+          <li class="show">
+            <div class="logo"><span class="ph mono">[ Logo ]</span><img src="images/shows/inkigayo.png" alt="Inkigayo logo" onerror="this.style.display='none'"></div>
+            <span class="name">Inkigayo</span>
+          </li>
+          <li class="show">
+            <div class="logo"><span class="ph mono">[ Logo ]</span><img src="images/shows/show-champion.png" alt="Show Champion logo" onerror="this.style.display='none'"></div>
+            <span class="name">Show Champion</span>
+          </li>
+          <li class="show">
+            <div class="logo"><span class="ph mono">[ Logo ]</span><img src="images/shows/simply-kpop.png" alt="Simply K-Pop logo" onerror="this.style.display='none'"></div>
+            <span class="name">Simply K-Pop</span>
+          </li>
+          <li class="show">
+            <div class="logo"><span class="ph mono">[ Logo ]</span><img src="images/shows/the-show.png" alt="The Show logo" onerror="this.style.display='none'"></div>
+            <span class="name">The Show</span>
+          </li>
+          <!-- ADD A SHOW: copy one whole <li class="show"> block above, paste it below, change the name, logo file and color -->
+        </ul>
+        <p class="note">Made history with HORI7ON as the first all-Filipino boy group to debut and perform on Korean music shows, and the first artist ever to perform a Filipino song on them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SONGWRITING -->
+  <section id="songwriting" style="--sec:#E58BA0">
+    <span class="ghost" aria-hidden="true">04</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">04</span><h2>Songwriting &amp; Composing</h2></div>
+      <div class="covers">
+        <!-- SPOTIFY: in Spotify, right-click (or tap the three dots on) a song, Share, Copy link to song.
+             Paste that link between the quotes after data-spotify= under the song. A player appears there. -->
+
+        <div class="song main">
+          <div class="cover">
+            <span class="ph mono">[ Cover ]</span>
+            <img src="images/covers/fly-with-it.jpg" alt="Cover art for Fly With It" onerror="this.style.display='none'">
+          </div>
+          <h3>Fly With It</h3><p class="mono">Co-writer / Co-composer</p>
+          <div class="spot" data-spotify="" data-title="Fly With It"></div>
+        </div>
+
+        <div class="song">
+          <div class="cover">
+            <span class="ph mono">[ Cover ]</span>
+            <img src="images/covers/sulong.jpg" alt="Cover art for Sulong" onerror="this.style.display='none'">
+          </div>
+          <h3>Sulong</h3><p class="mono">Co-writer / Co-composer</p>
+          <div class="spot" data-spotify="" data-title="Sulong"></div>
+        </div>
+
+        <div class="song">
+          <div class="cover">
+            <span class="ph mono">[ Cover ]</span>
+            <img src="images/covers/cold.jpg" alt="Cover art for Cold" onerror="this.style.display='none'">
+          </div>
+          <h3>Cold</h3><p class="mono">Co-writer</p>
+          <div class="spot" data-spotify="" data-title="Cold"></div>
+        </div>
+
+        <div class="song">
+          <div class="cover">
+            <span class="ph mono">[ Cover ]</span>
+            <img src="images/covers/mama.jpg" alt="Cover art for Mama" onerror="this.style.display='none'">
+          </div>
+          <h3>Mama</h3><p class="mono">Co-writer</p>
+          <div class="spot" data-spotify="" data-title="Mama"></div>
+        </div>
+
+        <div class="song">
+          <div class="cover">
+            <span class="ph mono">[ Cover ]</span>
+            <img src="images/covers/sumayaw-sumunod-tagalog.jpg" alt="Cover art for Sumayaw Sumunod, Tagalog version" onerror="this.style.display='none'">
+          </div>
+          <h3>Sumayaw Sumunod</h3><p class="mono">Co-writer / Tagalog</p>
+          <div class="spot" data-spotify="" data-title="Sumayaw Sumunod"></div>
+        </div>
+
+        <div class="song">
+          <div class="cover">
+            <span class="ph mono">[ Cover ]</span>
+            <!-- If both versions share one cover, point this at sumayaw-sumunod-tagalog.jpg too -->
+            <img src="images/covers/sumayaw-sumunod-english.jpg" alt="Cover art for Sumayaw Sumunod, English version" onerror="this.style.display='none'">
+          </div>
+          <h3>Sumayaw Sumunod</h3><p class="mono">Co-writer / English</p>
+          <div class="spot" data-spotify="" data-title="Sumayaw Sumunod"></div>
+        </div>
+
+        <!-- ADD A NEW SONG: copy one whole <div class="song"> block above, paste it below,
+             change the image file name, title and alt text, then upload the cover to images/covers/ -->
+
+      </div>
+      <div class="back-top"><a class="btn solid" href="#top">Back to home &uarr;</a></div>
+    </div>
+  </section>
+
+  <!-- BRAND PARTNERSHIPS -->
+  <section id="partnerships" style="--sec:#CDAA5E">
+    <span class="ghost" aria-hidden="true">05</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">05</span><h2>Brand partnerships</h2></div>
+      <div class="brands">
+
+        <!-- MAIN: JBL -->
+        <article class="brand main">
+          <div class="brand-copy">
+            <p class="mono">01</p>
+            <h3>JBL</h3>
+            <p class="what">Brand ambassador, 2024 to 2026</p>
+          </div>
+          <figure class="brand-photo">
+            <span class="ph mono">[ JBL photo ]</span>
+            <!-- Upload a campaign photo as images/brands/jbl.jpg -->
+            <img src="images/brands/jbl.jpg" alt="Marcus Cabais for JBL" onerror="this.style.display='none'">
+          </figure>
+        </article>
+
+        <article class="brand wide">
+          <p class="mono">02</p>
+          <h3>SM Supermalls</h3>
+                    <figure class="brand-logo"><span class="ph mono">[ Logo ]</span><img src="images/brands/sm-supermalls.png" alt="Logo of SM Supermalls" onerror="this.style.display='none'"></figure>
+        </article>
+
+        <article class="brand">
+          <p class="mono">03</p>
+          <h3>Bench</h3>
+          
+          <figure class="brand-logo sq"><span class="ph mono">[ Logo ]</span><img src="images/brands/bench.png" alt="Logo of Bench" onerror="this.style.display='none'"></figure>
+        </article>
+
+        <article class="brand">
+          <p class="mono">04</p>
+          <h3>Samsung</h3>
+          
+          <figure class="brand-logo sq"><span class="ph mono">[ Logo ]</span><img src="images/brands/samsung.png" alt="Logo of Samsung" onerror="this.style.display='none'"></figure>
+        </article>
+
+        <article class="brand">
+          <p class="mono">05</p>
+          <h3>vivo</h3>
+          
+          <figure class="brand-logo sq"><span class="ph mono">[ Logo ]</span><img src="images/brands/vivo.png" alt="Logo of vivo" onerror="this.style.display='none'"></figure>
+        </article>
+
+        <article class="brand wide">
+          <p class="mono">06</p>
+          <h3>Straightforward</h3>
+          
+          <figure class="brand-logo"><span class="ph mono">[ Logo ]</span><img src="images/brands/straightforward.png" alt="Logo of Straightforward" onerror="this.style.display='none'"></figure>
+        </article>
+
+        <!-- ADD ANOTHER BRAND: copy one whole <article class="brand"> block above, paste it below, change the name, tags and logo file name -->
+
+      </div>
+      <p class="brands-credit mono">Brand names belong to their respective owners. Shown only to identify the brands I worked with.</p>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" style="--sec:#D4505A">
+    <span class="ghost" aria-hidden="true">06</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">06</span><h2>Awards</h2></div>
+
+      <div class="stats" style="margin-bottom:26px">
+        <div class="stat"><p class="mono">Total wins</p><b class="huge">17</b></div>
+        <div class="stat"><p class="mono">National awards</p><b class="huge">11</b></div>
+        <div class="stat"><p class="mono">International awards</p><b class="huge">6</b></div>
+        <div class="stat"><p class="mono">Major nominations</p><b class="huge">14</b></div>
+        <div class="stat"><p class="mono">Years</p><b class="big">2016 to 2026</b></div>
+      </div>
+
+      <ol class="rows">
+        <!-- WINS, newest first. ADD A NEW ONE: copy a <li> line, paste it at the top, change the words -->
+        <li data-video="videos/awards/2026-vp-choice-awards.mp4"><span class="num mono">2026</span><span class="title">VP Choice Awards<small>KPop Act of the Year</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Win</span></li>
+        <li class="star" data-video="videos/awards/2025-1st-your-loop-awards.mp4"><span class="num mono">2025</span><span class="title">1st Your Loop Awards<small>P-pop Emerging Idol of the Year (Marcus)</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Personal win</span></li>
+        <li data-video="videos/awards/2025-10th-ppop-music-awards.mp4"><span class="num mono">2025</span><span class="title">10th PPOP Music Awards<small>Youth Leader Award</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2025-breaktudo-awards.mp4"><span class="num mono">2025</span><span class="title">BreakTudo Awards<small>Music by New International Artist, "Cold"</small></span><img class="flag" src="https://flagcdn.com/w40/br.png" srcset="https://flagcdn.com/w80/br.png 2x" width="28" height="21" alt="Brazil" title="Brazil"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2025-dabeme-music-awards.mp4"><span class="num mono">2025</span><span class="title">Dabeme Music Awards<small>Group/Band of the Year</small></span><img class="flag" src="https://flagcdn.com/w40/br.png" srcset="https://flagcdn.com/w80/br.png 2x" width="28" height="21" alt="Brazil" title="Brazil"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2025-vp-choice-awards.mp4"><span class="num mono">2025</span><span class="title">VP Choice Awards<small>KPop Act of the Year</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2024-9th-ppop-music-awards.mp4"><span class="num mono">2024</span><span class="title">9th PPOP Music Awards<small>Rising Boy Group of the Year</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2024-vp-choice-awards.mp4"><span class="num mono">2024</span><span class="title">VP Choice Awards<small>KPop Act of the Year</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2024-tag-awards-chicago.mp4"><span class="num mono">2024</span><span class="title">Tag Awards Chicago<small>P-Pop Stars of the Year</small></span><img class="flag" src="https://flagcdn.com/w40/us.png" srcset="https://flagcdn.com/w80/us.png 2x" width="28" height="21" alt="United States" title="United States"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2024-forbes-korea-6th-kpop-awards.mp4"><span class="num mono">2024</span><span class="title">Forbes Korea 6th KPop Awards<small>Popularity Award, Male Idols Who Shined in the First Half of 2024</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2024-nylon-manila-big-bold-brave-awards.mp4"><span class="num mono">2024</span><span class="title">Nylon Manila Big Bold Brave Awards<small>Fearless Global Filipino</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2023-korea-hallyu-awards.mp4"><span class="num mono">2023</span><span class="title">Korea Hallyu Awards<small>Popular Culture Award, Overseas Rising Star</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2023-8th-ppop-awards.mp4"><span class="num mono">2023</span><span class="title">8th PPOP Awards<small>Top Global Artist of the Year</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Win</span></li>
+        <li data-video="videos/awards/2023-asia-artist-awards.mp4"><span class="num mono">2023</span><span class="title">Asia Artist Awards<small>Focus Award, Music</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Win</span></li>
+        <li class="star" data-video="videos/awards/2023-dream-maker-winner.mp4"><span class="num mono">2023</span><span class="title">Dream Maker<small>Winner, youngest contestant in the show</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Personal win</span></li>
+        <li class="star" data-video="videos/awards/2017-cartoon-network-rockstar.mp4"><span class="num mono">2017</span><span class="title">Cartoon Network Rockstar<small>Grand Winner</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Personal win</span></li>
+        <li class="star" data-video="videos/awards/2016-sm-little-stars-sm-supermalls.mp4"><span class="num mono">2016</span><span class="title">SM Little Stars (SM Supermalls)<small>Boy Grand Winner</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Personal win</span></li>
+      </ol>
+
+      <h3 class="sub">Major nominations</h3>
+      <ol class="rows noms">
+        <li><span class="num mono">2026</span><span class="title">35th Seoul Music Awards<small>Popularity Award, K-Pop World Choice (Group)</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2025</span><span class="title">Asia Artist Awards<small>Popularity Award, Male Group</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2025</span><span class="title">Asia Star Entertainer Awards<small>Best Group Male, Best New Artist, Fan Choice 5th Generation</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2025</span><span class="title">Metro Manila Film Festival<small>Best Original Theme Song, "Pahinga"</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2024</span><span class="title">Asia Artist Awards<small>Popularity Award, Male Singer</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2024</span><span class="title">16th PMPC Star Awards for Music<small>New Male Group Artist of the Year, "Dash"</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2024</span><span class="title">Wish Music Awards<small>Wish Pop Song of the Year, "Six7een"</small></span><img class="flag" src="https://flagcdn.com/w40/ph.png" srcset="https://flagcdn.com/w80/ph.png 2x" width="28" height="21" alt="Philippines" title="Philippines"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2024</span><span class="title">Dream Rookie Concert<small>Dream Rookie Award, Super Rookie Award</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2023</span><span class="title">Asia Artist Awards<small>Popularity Award, Male Singer</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Nominated</span></li>
+        <li><span class="num mono">2023</span><span class="title">K-Star MVA<small>Next Star, Men</small></span><img class="flag" src="https://flagcdn.com/w40/kr.png" srcset="https://flagcdn.com/w80/kr.png 2x" width="28" height="21" alt="South Korea" title="South Korea"><span class="meta mono">Nominated</span></li>
+        <!-- ADD A NEW NOMINATION: copy a <li> line above, paste it at the top, change the words -->
+      </ol>
+    </div>
+  </section>
+
+  <!-- PRESS -->
+  <section id="press" style="--sec:#B08BE0">
+    <span class="ghost" aria-hidden="true">07</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">07</span><h2>As featured in</h2></div>
+      <div class="press">
+
+        <article class="mag">
+          <div class="mag-img">
+            <span class="ph mono">[ Parcinq photo ]</span>
+            <!-- Upload your feature photo as images/press/parcinq.jpg -->
+            <img src="images/press/parcinq.jpg" alt="Marcus Cabais in Parcinq magazine" onerror="this.style.display='none'">
+          </div>
+          <h3>Parcinq</h3>
+          <p class="mono">Magazine feature</p>
+        </article>
+
+        <article class="mag">
+          <div class="mag-img">
+            <span class="ph mono">[ Nylon photo ]</span>
+            <!-- Upload your feature photo as images/press/nylon.jpg -->
+            <img src="images/press/nylon.jpg" alt="Marcus Cabais in Nylon magazine" onerror="this.style.display='none'">
+          </div>
+          <h3>Nylon</h3>
+          <p class="mono">Magazine feature</p>
+        </article>
+
+        <article class="mag">
+          <div class="mag-img">
+            <span class="ph mono">[ Billboard PH photo ]</span>
+            <!-- Upload your feature photo as images/press/billboard-ph.jpg -->
+            <img src="images/press/billboard-ph.jpg" alt="Marcus Cabais in Billboard Philippines" onerror="this.style.display='none'">
+          </div>
+          <h3>Billboard PH</h3>
+          <p class="mono">Artist feature</p>
+        </article>
+
+        <article class="mag">
+          <div class="mag-img">
+            <span class="ph mono">[ Forbes Korea photo ]</span>
+            <!-- Upload your feature photo as images/press/forbes-korea.jpg -->
+            <img src="images/press/forbes-korea.jpg" alt="Marcus Cabais in Forbes Korea" onerror="this.style.display='none'">
+          </div>
+          <h3>Forbes Korea</h3>
+          <p class="mono">Magazine feature</p>
+        </article>
+
+        <!-- ADD ANOTHER MAGAZINE: copy one whole <article class="mag"> block above, paste it below, change the names -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" style="--sec:#EDEDED">
+    <span class="ghost" aria-hidden="true">08</span>
+    <div class="wrap">
+      <div class="sec-head"><span class="mono">08</span></div>
+      <h2 class="xl">Let's make something.</h2>
+      <p class="muted">For bookings, collabs and press, reach out here.</p>
+      <a class="btn solid" href="mailto:inquiremarcus@gmail.com">inquiremarcus@gmail.com</a>
+      <div class="socials mono">
+        <!-- REPLACE each "#" with the real profile link -->
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap mono muted">
+    <span>&copy; 2026 Marcus Cabais</span>
+    <a href="#top" style="text-decoration:none">Back to top &uarr;</a>
+  </div>
+</footer>
+
+<script>
+/* Video clips: any row with data-video="videos/..." gets a "Clip" tag once the file exists.
+   Desktop: hover to preview (muted). Click or tap: opens the clip under the row with controls and sound. */
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('li[data-video]'));
+  if(!rows.length)return;
+  var fine=window.matchMedia&&window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var pop=document.createElement('div');pop.className='clip-pop';
+  var pv=document.createElement('video');pv.muted=true;pv.loop=true;pv.setAttribute('playsinline','');
+  pop.appendChild(pv);document.body.appendChild(pop);
+  var openRow=null;
+  function place(e){
+    var w=pop.offsetWidth,h=pop.offsetHeight,x=e.clientX+24,y=e.clientY+20;
+    if(x+w>window.innerWidth-12)x=e.clientX-w-24;
+    if(y+h>window.innerHeight-12)y=window.innerHeight-h-12;
+    pop.style.left=Math.max(12,x)+'px';pop.style.top=Math.max(12,y)+'px';
+  }
+  function hide(){pop.classList.remove('on');pv.pause();}
+  function closeInline(){
+    if(!openRow)return;
+    var box=openRow.querySelector('.clip-inline');
+    if(box){box.querySelector('video').pause();box.remove();}
+    openRow.setAttribute('aria-expanded','false');openRow=null;
+  }
+  function toggle(row){
+    var was=(openRow===row);
+    closeInline();hide();
+    if(was)return;
+    var box=document.createElement('div');box.className='clip-inline';
+    var v=document.createElement('video');v.src=row.getAttribute('data-video');v.controls=true;v.loop=true;v.setAttribute('playsinline','');
+    box.appendChild(v);row.appendChild(box);
+    row.setAttribute('aria-expanded','true');openRow=row;
+    var p=v.play();if(p&&p.catch)p.catch(function(){});
+  }
+  rows.forEach(function(row){
+    var src=row.getAttribute('data-video');
+    var probe=document.createElement('video');probe.preload='metadata';
+    probe.onloadedmetadata=function(){
+      row.classList.add('has-clip');row.tabIndex=0;row.setAttribute('role','button');row.setAttribute('aria-expanded','false');
+      if(row.closest('#highlights')){
+        var th=document.createElement('video');th.className='clip-thumb';th.src=src;th.muted=true;th.loop=true;th.autoplay=true;
+        th.setAttribute('playsinline','');th.setAttribute('muted','');row.appendChild(th);
+        var tp=th.play();if(tp&&tp.catch)tp.catch(function(){});
+      }
+      var t=document.createElement('span');t.className='clip-tag mono';t.textContent='\u25B6 Clip';row.appendChild(t);
+      probe.removeAttribute('src');probe.load();
+    };
+    probe.src=src;
+    row.addEventListener('mouseenter',function(e){
+      if(!fine||!row.classList.contains('has-clip')||openRow===row||row.closest('#highlights'))return;
+      pop.style.setProperty('--c',getComputedStyle(row).getPropertyValue('--sec')||'#EDEDED');
+      if(pv.getAttribute('data-src')!==src){pv.src=src;pv.setAttribute('data-src',src);}
+      pop.classList.add('on');place(e);
+      var p=pv.play();if(p&&p.catch)p.catch(function(){});
+    });
+    row.addEventListener('mousemove',function(e){if(pop.classList.contains('on'))place(e);});
+    row.addEventListener('mouseleave',hide);
+    row.addEventListener('click',function(e){
+      if(row.classList.contains('has-clip')&&!e.target.closest('.clip-inline'))toggle(row);
+    });
+    row.addEventListener('keydown',function(e){
+      if((e.key==='Enter'||e.key===' ')&&e.target===row&&row.classList.contains('has-clip')){e.preventDefault();toggle(row);}
+    });
+  });
+})();
+</script>
+<script>
+/* Embeds: paste a normal link into data-youtube="..." or data-spotify="..." and it becomes a playable player. */
+(function(){
+  document.querySelectorAll('[data-youtube]').forEach(function(box){
+    var url=(box.getAttribute('data-youtube')||'').trim();
+    var m=url.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([A-Za-z0-9_-]{11})/);
+    if(!m)return;
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+m[1]+'?rel=0';
+    f.title=box.getAttribute('data-title')||'Video';
+    f.loading='lazy';
+    f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.setAttribute('allowfullscreen','');
+    box.appendChild(f);
+    var ph=box.querySelector('.ph');if(ph)ph.style.display='none';
+  });
+  document.querySelectorAll('[data-spotify]').forEach(function(box){
+    var url=(box.getAttribute('data-spotify')||'').trim();
+    var m=url.match(/(?:spotify\.com\/(?:intl-[a-z-]+\/)?|spotify:)(track|album|playlist|episode)[\/:]([A-Za-z0-9]+)/);
+    if(!m)return;
+    var f=document.createElement('iframe');
+    f.src='https://open.spotify.com/embed/'+m[1]+'/'+m[2]+'?utm_source=generator&theme=0';
+    f.title='Spotify: '+(box.getAttribute('data-title')||'song');
+    f.loading='lazy';
+    f.allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+    box.appendChild(f);
+  });
+})();
+</script>
+<script>
+/* Timeline: click a tile to open or close it. Article links with no address yet stay inactive. */
+(function(){
+  document.querySelectorAll('.timeline li.tl').forEach(function(li){
+    var btn=li.querySelector('.tl-head');
+    btn.addEventListener('click',function(){
+      var open=!li.classList.contains('open');
+      li.classList.toggle('open',open);
+      btn.setAttribute('aria-expanded',open?'true':'false');
+      if(!open){li.querySelectorAll('iframe').forEach(function(f){var u=f.src;f.src=u;});}
+    });
+  });
+  document.querySelectorAll('.tl-article').forEach(function(a){
+    var h=(a.getAttribute('href')||'').trim();
+    if(!h||h==='#'){a.classList.add('empty');a.addEventListener('click',function(e){e.preventDefault();});}
+  });
+})();
+</script>
+<script>
+/* Highlights slideshow: loops forever, buttons at the sides, a subtle "Click here" nudge on the right button every few seconds. */
+(function(){
+  var sl=document.getElementById('slideshow');if(!sl)return;
+  var slides=[].slice.call(sl.querySelectorAll('.slide')),dots=[].slice.call(sl.querySelectorAll('.sl-dot'));
+  var count=sl.querySelector('.sl-count'),hint=sl.querySelector('.sl-hint'),nb=sl.querySelector('.sl-btn.next'),pb=sl.querySelector('.sl-btn.prev');
+  var i=0,busy=false,n=slides.length,ht=null;
+  function pad(x){return (x<10?'0':'')+x;}
+  function clearHint(){hint.classList.remove('on');nb.classList.remove('nudge');}
+  function update(){
+    dots.forEach(function(d,k){d.classList.toggle('on',k===i);d.setAttribute('aria-current',k===i?'true':'false');});
+    count.textContent=pad(i+1)+' / '+pad(n);
+    slides.forEach(function(s,k){s.setAttribute('aria-hidden',k===i?'false':'true');s.classList.toggle('active',k===i);});
+  }
+  function show(to,dir){
+    if(busy||to===i)return;busy=true;
+    var cur=slides[i],nx=slides[to];
+    nx.style.transition='none';nx.style.visibility='visible';nx.style.transform='translateX('+(dir*100)+'%)';
+    void nx.offsetWidth;
+    nx.style.transition='';nx.style.transform='translateX(0)';cur.style.transform='translateX('+(-dir*100)+'%)';
+    i=to;update();clearHint();
+    setTimeout(function(){cur.style.visibility='hidden';busy=false;},600);
+  }
+  function next(){show((i+1)%n,1);}
+  function prev(){show((i-1+n)%n,-1);}
+  nb.addEventListener('click',next);pb.addEventListener('click',prev);
+  dots.forEach(function(d,k){d.addEventListener('click',function(){show(k,k>i?1:-1);});});
+  sl.addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'){e.preventDefault();next();}
+    if(e.key==='ArrowLeft'){e.preventDefault();prev();}
+  });
+  var x0=null;
+  sl.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+  sl.addEventListener('touchend',function(e){
+    if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;x0=null;
+    if(Math.abs(dx)>50){if(dx<0)next();else prev();}
+  });
+  function pulse(){
+    if(document.hidden)return;
+    var r=sl.getBoundingClientRect();if(r.bottom<0||r.top>window.innerHeight)return;
+    hint.classList.add('on');nb.classList.remove('nudge');void nb.offsetWidth;nb.classList.add('nudge');
+    clearTimeout(ht);ht=setTimeout(clearHint,3200);
+  }
+  setInterval(pulse,9000);
+  update();
+})();
+</script>
+<script>
+/* Motion: scroll reveal, scroll progress bar, gentle parallax on the big ghost numbers. */
+(function(){
+  var root=document.documentElement;root.classList.add('js');
+  var sel='.sec-head,.rows li,.venue,.song,.mag,.brand,li.tl,.show,.sl,.shows,.back-top,.contact h2,.contact p,.contact .btn,.stats .stat';
+  var els=[].slice.call(document.querySelectorAll(sel));
+  els.forEach(function(el){
+    el.classList.add('rv');
+    var sibs=[].slice.call(el.parentNode.children).filter(function(c){return c.classList.contains('rv');});
+    el.style.setProperty('--d',Math.min(sibs.indexOf(el),8)*0.07+'s');
+  });
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});}
+  else{
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.1,rootMargin:'0px 0px -5% 0px'});
+    els.forEach(function(e){io.observe(e);});
+  }
+  var prog=document.getElementById('prog'),ghosts=[].slice.call(document.querySelectorAll('.ghost')),tick=false;
+  function frame(){
+    tick=false;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    if(prog)prog.style.transform='scaleX('+(h>0?Math.min(1,window.scrollY/h):0)+')';
+    var vh=window.innerHeight;
+    ghosts.forEach(function(g){
+      var r=g.parentNode.getBoundingClientRect();
+      if(r.bottom<0||r.top>vh)return;
+      g.style.transform='translateY('+Math.round((r.top+r.height/2-vh/2)*-0.07)+'px)';
+    });
+  }
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(frame);}},{passive:true});
+  window.addEventListener('resize',frame);frame();
+})();
+</script>
+<script>
+/* Moving minimalist backgrounds for every page, plus a "you are here" highlight in the top menu. */
+(function(){
+  var V=[
+    '<i class="fx-ring"></i><i class="fx-dots"></i>',
+    '<i class="fx-lines"></i><i class="fx-sq" style="left:12%;animation-duration:28s;animation-delay:-0s;width:12px;height:12px"></i><i class="fx-sq" style="left:38%;animation-duration:36s;animation-delay:-14s;width:8px;height:8px"></i><i class="fx-sq" style="left:64%;animation-duration:32s;animation-delay:-7s;width:12px;height:12px;border-radius:50%"></i><i class="fx-sq" style="left:86%;animation-duration:40s;animation-delay:-22s;width:9px;height:9px"></i>',
+    '<i class="fx-ring2"></i><i class="fx-sq" style="left:20%;animation-duration:30s;animation-delay:-5s;width:12px;height:12px"></i><i class="fx-sq" style="left:55%;animation-duration:38s;animation-delay:-16s;width:9px;height:9px;border-radius:50%"></i><i class="fx-sq" style="left:80%;animation-duration:34s;animation-delay:-24s;width:11px;height:11px"></i>',
+    '<i class="fx-dots"></i><i class="fx-ring2"></i>'
+  ];
+  var pages=[].slice.call(document.querySelectorAll('.hero,main > section'));
+  pages.forEach(function(p,k){
+    var d=document.createElement('div');d.className='bgfx';d.setAttribute('aria-hidden','true');
+    d.innerHTML=V[k%V.length];p.insertBefore(d,p.firstChild);
+  });
+  var links={};[].slice.call(document.querySelectorAll('.links a')).forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          Object.keys(links).forEach(function(k){links[k].classList.toggle('on',k===e.target.id);});
+        }
+      });
+    },{rootMargin:'-40% 0px -55% 0px'});
+    Object.keys(links).forEach(function(k){var el=document.getElementById(k);if(el)io.observe(el);});
+  }
+})();
+</script>
+</body>
+</html>
