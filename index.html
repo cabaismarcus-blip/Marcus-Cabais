@@ -745,6 +745,13 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
 @keyframes totop{0%,100%{transform:translateY(0)}20%{transform:translateY(-12px)}40%{transform:translateY(0)}60%{transform:translateY(-7px)}80%{transform:translateY(0)}}
 @keyframes totopring{0%{box-shadow:0 0 0 0 rgba(246,196,83,.65)}100%{box-shadow:0 0 0 20px rgba(246,196,83,0)}}
 @media (max-width:640px){.to-top{right:14px;bottom:14px;width:46px;height:46px}}
+.to-top .tt-text{display:none}
+@media (min-width:761px){
+  .to-top{width:auto;height:60px;padding:0 28px;gap:12px;right:28px;bottom:28px;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
+  .to-top .tt-arrow{font-size:24px;line-height:1}
+  .to-top .tt-text{display:inline;font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700}
+  .to-top::before{display:none}
+}
 </style>
 </head>
 <body>
@@ -1418,7 +1425,7 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
     <span>&copy; 2026 Marcus Cabais</span>
   </div>
 </footer>
-<button class="to-top" type="button" aria-label="Back to top" title="Back to top">&uarr;</button>
+<button class="to-top" type="button" aria-label="Back to top" title="Back to top"><span class="tt-arrow">&uarr;</span><span class="tt-text">Back to top</span></button>
 
 <script>
 /* Video clips: any row with data-video="videos/..." gets a "Clip" tag once the file exists.
