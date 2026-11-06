@@ -747,9 +747,9 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
 @media (max-width:640px){.to-top{right:14px;bottom:14px;width:46px;height:46px}}
 .to-top .tt-text{display:none}
 @media (min-width:761px){
-  .to-top{width:auto;height:60px;padding:0 28px;gap:12px;right:28px;bottom:28px;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
-  .to-top .tt-arrow{font-size:24px;line-height:1}
-  .to-top .tt-text{display:inline;font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700}
+  .to-top{flex-direction:row;flex-wrap:nowrap;white-space:nowrap;width:auto;height:60px;padding:0 28px;gap:12px;right:28px;bottom:28px;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
+  .to-top .tt-arrow{display:block;flex:none;font-size:24px;line-height:1}
+  .to-top .tt-text{display:block;flex:none;font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700;line-height:1}
   .to-top::before{display:none}
 }
 </style>
