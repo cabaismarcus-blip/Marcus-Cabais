@@ -735,6 +735,16 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
 @media (max-width:760px){
   .nav{padding-top:10px;padding-bottom:10px}
 }
+/* FLOATING BACK-TO-TOP */
+.to-top{position:fixed;right:20px;bottom:20px;z-index:102;width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#17181D;border:0;cursor:pointer;font-family:inherit;font-size:24px;font-weight:700;line-height:1;opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .3s,transform .3s,visibility 0s .3s}
+.to-top.show{opacity:1;visibility:visible;transform:none;transition:opacity .3s,transform .3s,visibility 0s 0s}
+.to-top:hover{background:var(--text)}
+.to-top::before{content:"Back to top";position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);padding:7px 11px;background:var(--bg);border:1px solid var(--accent);color:var(--text);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .4s}
+.to-top.nudge::before{opacity:1}
+.to-top.nudge{animation:totop 1.4s ease-in-out,totopring 1.4s ease-out}
+@keyframes totop{0%,100%{transform:translateY(0)}20%{transform:translateY(-12px)}40%{transform:translateY(0)}60%{transform:translateY(-7px)}80%{transform:translateY(0)}}
+@keyframes totopring{0%{box-shadow:0 0 0 0 rgba(246,196,83,.65)}100%{box-shadow:0 0 0 20px rgba(246,196,83,0)}}
+@media (max-width:640px){.to-top{right:14px;bottom:14px;width:46px;height:46px}}
 </style>
 </head>
 <body>
@@ -1068,7 +1078,7 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
           <!-- Add what you performed here and when, like: <p class="what">Event name, Month Year</p> -->
           <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= and it becomes a playable video -->
           <div class="v-video" data-youtube="https://www.youtube.com/watch?v=pl68hDuFcw4" data-title="Marcus Cabais at Philippine Arena"><span class="ph mono">[ YouTube video ]</span></div>
-          <p class="v-cap">Our performance of "SIX7EEN" for Asia Artist Awards 2023</p>
+          <p class="v-cap">Our performance of "SIX7EEN" for Asia Artist Awards 2023.</p>
         </article>
 
         <article class="venue">
@@ -1077,7 +1087,7 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
           <p class="what">ROUND Festival, April 2026</p>
           <p class="what">Friend-SHIP: Voyage to Manila, September 2023</p>
           <div class="v-video" data-youtube="https://www.youtube.com/watch?v=IGcn7DVXHl4" data-title="Marcus Cabais at Araneta Coliseum"><span class="ph mono">[ YouTube video ]</span></div>
-          <p class="v-cap">Our performance of "DASH" for ROUND Festival 2026</p>
+          <p class="v-cap">Our performance of "DASH" for ROUND Festival 2026.</p>
         </article>
 
         <article class="venue">
@@ -1088,7 +1098,7 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
           <p class="what">Daytour: Anchor High, November 2024</p>
           <p class="what">Watsons Playlist, August 2024</p>
           <div class="v-video" data-youtube="https://www.youtube.com/watch?v=0QlqsxbOU7A" data-title="Marcus Cabais at MOA Arena"><span class="ph mono">[ YouTube video ]</span></div>
-          <p class="v-cap">My performance of "RAINISM" for Daytour: Anchor High 2024</p>
+          <p class="v-cap">My performance of "RAINISM" for Daytour: Anchor High 2024.</p>
         </article>
 
         <article class="venue">
@@ -1097,7 +1107,7 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
           <p class="what">Winter Youth Olympics 2024 opening ceremony, South Korea, January 2024</p>
           <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= and it becomes a playable video -->
           <div class="v-video small" data-youtube="https://www.youtube.com/watch?v=T9a4FJFQAfw" data-title="Marcus Cabais at the Winter Youth Olympics 2024 opening ceremony"><span class="ph mono">[ YouTube video ]</span></div>
-          <p class="v-cap">Our performance of "HIT ME" for the Winter Youth Olympics 2024 opening ceremony</p>
+          <p class="v-cap">Our performance of "HIT ME" for the Winter Youth Olympics 2024 opening ceremony.</p>
         </article>
 
         <!-- ADD ANOTHER STAGE: copy one whole <article class="venue"> block above, paste it below, change the words -->
@@ -1215,7 +1225,6 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
              change the image file name, title and alt text, then upload the cover to images/covers/ -->
 
       </div>
-      <div class="back-top"><a class="btn solid" href="#top">Back to home &uarr;</a></div>
     </div>
   </section>
 
@@ -1407,9 +1416,9 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
 <footer>
   <div class="wrap mono muted">
     <span>&copy; 2026 Marcus Cabais</span>
-    <a href="#top" style="text-decoration:none">Back to top &uarr;</a>
   </div>
 </footer>
+<button class="to-top" type="button" aria-label="Back to top" title="Back to top">&uarr;</button>
 
 <script>
 /* Video clips: any row with data-video="videos/..." gets a "Clip" tag once the file exists.
@@ -1646,6 +1655,32 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
   document.querySelectorAll('.links a').forEach(function(a){a.addEventListener('click',function(){setOpen(false);});});
   window.addEventListener('keydown',function(e){if(e.key==='Escape')setOpen(false);});
 })();
-</script>          
+</script>
+<script>
+/* Floating back-to-top: appears from the My Story page onward, hidden on Home and Highlights. */
+(function(){
+  var btn=document.querySelector('.to-top'),story=document.getElementById('timeline');
+  if(!btn||!story)return;
+  var shown=false,tick=false,tm=null;
+  function nudge(){
+    if(!shown||document.hidden)return;
+    btn.classList.remove('nudge');void btn.offsetWidth;btn.classList.add('nudge');
+    clearTimeout(tm);tm=setTimeout(function(){btn.classList.remove('nudge');},2600);
+  }
+  function check(){
+    tick=false;
+    var on=story.getBoundingClientRect().top<=window.innerHeight*0.5;
+    if(on===shown)return;
+    shown=on;btn.classList.toggle('show',on);
+    if(!on)btn.classList.remove('nudge');
+    else setTimeout(nudge,900);
+  }
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(check);}},{passive:true});
+  window.addEventListener('resize',check);
+  btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  setInterval(nudge,9000);
+  check();
+})();
+</script>
 </body>
 </html>
