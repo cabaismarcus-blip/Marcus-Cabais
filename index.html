@@ -23,7 +23,7 @@
     images/hero.jpg             -> your face photo on the first page
     images/marcus.jpg            -> your main photo (About section)
     images/lion-king.jpg         -> your Lion King photo (Highlights slide 1)
-    images/highlights/hori7on.jpg, bench.jpg, vivo.jpg, awards.jpg -> the other Highlights slide photos
+    images/highlights/hori7on.jpg, izx.jpg, bench.jpg, vivo.jpg, awards.jpg -> the other Highlights slide photos
     images/covers/mama.jpg       -> song covers (see the Songwriting section for each file name)
     images/press/parcinq.jpg     -> your Parcinq magazine photo
     images/press/nylon.jpg       -> your Nylon magazine photo
@@ -735,6 +735,10 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
 @media (max-width:760px){
   .nav{padding-top:10px;padding-bottom:10px}
 }
+/* K-pop slide: two same-size 4:3 photos, overlapping diagonally */
+.sl-media.duo.duo2 .sl-photo{width:72%}
+.sl-media.duo.duo2 .sl-photo:first-child{left:0;top:0;right:auto;bottom:auto;z-index:1}
+.sl-media.duo.duo2 .sl-photo:last-child{right:0;bottom:0;left:auto;top:auto;z-index:2}
 /* FLOATING BACK-TO-TOP */
 .to-top{position:fixed;right:20px;bottom:20px;z-index:102;width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#17181D;border:0;cursor:pointer;font-family:inherit;font-size:24px;font-weight:700;line-height:1;opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .3s,transform .3s,visibility 0s .3s}
 .to-top.show{opacity:1;visibility:visible;transform:none;transition:opacity .3s,transform .3s,visibility 0s 0s}
@@ -744,14 +748,11 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
 .to-top.nudge{animation:totop 1.4s ease-in-out,totopring 1.4s ease-out}
 @keyframes totop{0%,100%{transform:translateY(0)}20%{transform:translateY(-12px)}40%{transform:translateY(0)}60%{transform:translateY(-7px)}80%{transform:translateY(0)}}
 @keyframes totopring{0%{box-shadow:0 0 0 0 rgba(246,196,83,.65)}100%{box-shadow:0 0 0 20px rgba(246,196,83,0)}}
-@media (max-width:640px){.to-top{right:14px;bottom:14px;width:46px;height:46px}}
-.to-top .tt-text{display:none}
-@media (min-width:761px){
-  .to-top{flex-direction:row;flex-wrap:nowrap;white-space:nowrap;width:auto;height:60px;padding:0 28px;gap:12px;right:28px;bottom:28px;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
-  .to-top .tt-arrow{display:block;flex:none;font-size:24px;line-height:1}
-  .to-top .tt-text{display:block;flex:none;font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700;line-height:1}
-  .to-top::before{display:none}
-}
+.to-top{flex-direction:row;flex-wrap:nowrap;white-space:nowrap;width:auto;height:60px;padding:0 28px;gap:12px;right:28px;bottom:28px;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
+.to-top .tt-arrow{display:block;flex:none;font-size:24px;line-height:1}
+.to-top .tt-text{display:block;flex:none;font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700;line-height:1}
+.to-top::before{display:none}
+@media (max-width:640px){.to-top{right:14px;bottom:14px;height:52px;padding:0 20px;gap:10px;font-size:13px}}
 </style>
 </head>
 <body>
@@ -790,7 +791,7 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
         <div class="hero-desc">
           <p class="roles">Singer &middot; Songwriter &middot; Composer &middot; Actor &middot; Host &middot; Model &middot; Brand Ambassador</p>
           <p class="bio lead">I'm Marcus, from the Philippines.</p>
-          <p class="bio">I started performing at age 3, and went on to play <span class="acc">YOUNG SIMBA</span> in The Lion King International Tour, the world's #1 musical. I debuted in South Korea with <span class="acc">HORI7ON</span> as the <span class="acc">YOUNGEST MALE K-POP IDOL EVER TO DEBUT</span>.</p>
+          <p class="bio">I started performing at age 3, and went on to play <span class="acc">YOUNG SIMBA</span> in The Lion King International Tour, the world's #1 musical. I debuted in South Korea with <span class="acc">HORI7ON</span> as the <span class="acc">YOUNGEST MALE K-POP IDOL EVER TO DEBUT</span>. A year later, I debuted in South Korea again with <span class="acc">izx!</span>, through a Korean reality show.</p>
           <p class="bio">Music is my passion. I love writing songs in Tagalog and English, and I aspire to be the best artist I can be.</p>
         </div>
         <div class="hero-cta">
@@ -858,23 +859,27 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
             </div>
           </article>
 
-          <!-- SLIDE 2: K-POP / HORI7ON (photo: images/highlights/hori7on.jpg, 4:3 landscape) -->
-          <article class="slide" style="--sec:#8FB8FF;visibility:hidden;transform:translateX(100%)" aria-label="Slide 2 of 4: K-pop and HORI7ON">
+          <!-- SLIDE 2: K-POP / HORI7ON + izx! (photos: images/highlights/hori7on.jpg and images/highlights/izx.jpg, both landscape 4:3) -->
+          <article class="slide" style="--sec:#8FB8FF;visibility:hidden;transform:translateX(100%)" aria-label="Slide 2 of 4: K-pop, HORI7ON and izx!">
             <div class="sl-copy">
-              <p class="mono sl-label">02 / Performing</p>
-              <h3 class="sl-title">K-pop<br><span class="outline">HORI7ON</span></h3>
-              <p class="sl-lead">Debuted in South Korea as the youngest male K-pop idol ever to debut.</p>
+              <p class="mono sl-label">02 / K-pop</p>
+              <h3 class="sl-title">HORI7ON<br><span class="outline">&amp; izx!</span></h3>
+              <p class="sl-lead">Two K-pop debuts in South Korea, <span>the first as the youngest male K-pop idol ever to debut.</span></p>
               <ol class="sl-pts">
                 <li><span class="n mono">01</span><span>Joined Dream Maker at 13 and went on to win.</span></li>
                 <li><span class="n mono">02</span><span>One of 7 winners, chosen out of thousands who auditioned.</span></li>
-                <li><span class="n mono">03</span><span>The winners became a group and trained in South Korea.</span></li>
-                <li><span class="n mono">04</span><span>Debuted in July 2023 as HORI7ON, the first all-Filipino group on Korean music shows.</span></li>
+                <li><span class="n mono">03</span><span>Debuted in July 2023 as <b>HORI7ON</b>, the first all-Filipino group on Korean music shows.</span></li>
+                <li><span class="n mono">04</span><span>Debuted again in 2024 with <b>izx!</b>, through the Korean reality show The Suspicious Debut Project.</span></li>
               </ol>
             </div>
-            <div class="sl-media">
+            <div class="sl-media duo duo2">
               <figure class="sl-photo r4x3">
                 <span class="ph mono">[ HORI7ON photo ]</span>
                 <img src="images/highlights/hori7on.jpg" alt="Marcus Cabais with HORI7ON" onerror="this.style.display='none'">
+              </figure>
+              <figure class="sl-photo r4x3">
+                <span class="ph mono">[ izx! photo ]</span>
+                <img src="images/highlights/izx.jpg" alt="Marcus Cabais with izx!" onerror="this.style.display='none'">
               </figure>
             </div>
           </article>
@@ -1053,6 +1058,24 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
             <p class="tl-desc">Because I won Dream Maker, the winners were put together as a group and we flew to South Korea for rigorous training, and in July 2023 I debuted with the global boy group HORI7ON as the youngest male K-pop idol ever to debut. Together we made history as the first all-Filipino group to perform on Korean music shows, and the first artist ever to perform a Filipino song on them, all while releasing our album Friend-Ship.</p>
             <!-- YOUTUBE VIDEO: paste any normal YouTube link between the quotes after data-youtube= -->
               <div class="v-video" data-youtube="https://www.youtube.com/watch?v=XQXdFIu4s5o" data-title="HORI7ON debut"><span class="ph mono">[ YouTube video ]</span></div>
+          </div></div></div>
+        </li>
+        <li class="tl">
+          <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-10">
+            <span class="year mono">2024</span>
+            <span class="what">Debut with izx!<small>Through the reality show The Suspicious Debut Project</small></span>
+            <span class="tl-plus" aria-hidden="true">+</span>
+          </button>
+          <div class="tl-body" id="tl-10"><div class="tl-inner"><div class="tl-pad">
+            <p class="tl-desc">A year after HORI7ON, I debuted in South Korea again with izx!, through the reality show The Suspicious Debut Project: izx! &lt;WE ARE izx!&gt;, broadcast on MBC+. Along the way, we promoted Korean brands to fans around the world, from skincare and lifestyle products to fashion and a metaverse app.</p>
+            <p class="tlabel mono">Brands featured on the show</p>
+              <div class="tchips"><span>12GRABS</span><span>BIROSO</span><span>Zensai Korea</span><span>IFLAND</span></div>
+            <!-- YOUTUBE VIDEO 1 (izx! music video): paste any normal YouTube link between the quotes after data-youtube= -->
+              <div class="v-video" data-youtube="" data-title="izx! music video"><span class="ph mono">[ YouTube video ]</span></div>
+              <p class="v-cap">izx! music video.</p>
+            <!-- YOUTUBE VIDEO 2 (reality show episode): paste any normal YouTube link between the quotes after data-youtube= -->
+              <div class="v-video" data-youtube="" data-title="The Suspicious Debut Project: izx! episode"><span class="ph mono">[ YouTube video ]</span></div>
+              <p class="v-cap">An episode of The Suspicious Debut Project: izx!</p>
           </div></div></div>
         </li>
         <li class="tl">
