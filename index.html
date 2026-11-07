@@ -765,8 +765,8 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
   .sl-media{justify-content:center}
   .sl-media.duo{max-width:470px;margin:0 auto}
   .sl-btn{width:44px;height:44px}
-  .sl-btn.prev{left:-16px}.sl-btn.next{right:-16px}
-  .sl-hint{right:-16px;bottom:calc(50% + 32px);top:auto}
+  .sl-btn.prev{left:8px}.sl-btn.next{right:8px}
+  .sl-hint{right:8px;bottom:calc(50% + 32px);top:auto}
   .sl-hint::after{right:16px}
   .sl-photo{box-shadow:8px 8px 0 0 color-mix(in srgb,var(--sec) 28%,var(--bg))}
 }
@@ -1740,7 +1740,7 @@ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
   var sl=document.getElementById('slideshow');if(!sl)return;
   function fit(){
     if(window.innerWidth>820){sl.style.removeProperty('--sz');return;}
-    var w=sl.parentElement.clientWidth-20;
+    var cs=getComputedStyle(sl.parentElement),w=sl.parentElement.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
     sl.style.setProperty('--sz',(w/1000).toFixed(4));
   }
   fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);
